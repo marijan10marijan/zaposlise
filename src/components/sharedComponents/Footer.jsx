@@ -17,11 +17,58 @@ const Footer = () => {
               height={30}
             />
             <div className={styles.footer__info_socialLinks}>
-              <a href=""></a>
+              <a
+                href="https://www.facebook.com/zaposlisehrvatska/"
+                target="_blank"
+              >
+                <Image
+                  src={"/metaIkona.png"}
+                  alt="meta ikona link koji vodi do facebook zaposlise profila"
+                  width={32}
+                  height={32}
+                />
+              </a>
+              <a href="https://www.instagram.com/zaposlise.hr/" target="_blank">
+                <Image
+                  src={"/instagramIkona.png"}
+                  alt="instagram ikona link koja vodi do instagram zaposlise profila"
+                  width={32}
+                  height={32}
+                />
+              </a>
+              <a
+                href="https://hr.linkedin.com/company/zaposlise"
+                target="_blank"
+              >
+                <Image
+                  src={"/linkedInIkona.png"}
+                  alt="linkedIn ikona link koji vodi do linkedIn zaposlise profila"
+                  width={32}
+                  height={32}
+                />
+              </a>
+              <a href="https://www.youtube.com/@zaposlisehr." target="_blank">
+                <Image
+                  src={"/youtubeIkona.png"}
+                  alt="youtube ikona link koji vodi do youtube zaposlise profila"
+                  width={32}
+                  height={32}
+                />
+              </a>
+              <a href="https://www.tiktok.com/@zaposlise.hr" target="_blank">
+                <Image
+                  src={"/tiktokIkona.png"}
+                  alt="tiktok ikona link koji vodi do tiktok zaposlise profila"
+                  width={32}
+                  height={32}
+                />
+              </a>
             </div>
           </div>
           {/* FOOTER NAVIGACIJA ***************************************************/}
-          <div className={styles.footer__nav}></div>
+          <div className={styles.footer__nav}>
+            
+          </div>
           {/* FOOTER BLOG *********************************************************/}
           <div className={styles.footer__blog}></div>
           {/* FOOTER NEWSLETTER ***************************************************/}

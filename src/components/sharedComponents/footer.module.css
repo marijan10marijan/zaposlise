@@ -1,10 +1,35 @@
 .footer {
+  width: 100%;
+  background-color: rgba(249, 249, 249, 1);
 }
 .footer__wrapper {
+  max-width: 1280px;
+  padding-block-start: 5rem;
+  padding-block-start: 2.5rem;
+  margin-inline: auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 /* FOOTER INFO ***************************************************/
 .footer__info {
+  display: flex;
+  align-items: flex-start;
+  gap: 136px;
+}
+
+/* FOOTER LOGO AND SOCIAL  *****************************************/
+.footer__info_social {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.footer__info_socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* FOOTER NAV ***************************************************/
