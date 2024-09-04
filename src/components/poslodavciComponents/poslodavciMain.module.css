@@ -1,0 +1,97 @@
+.main {
+  padding-block-start: 130px;
+  padding-block-end: 180px;
+  padding-inline-start: 120px;
+  padding-inline-end: 104px;
+  background-color: #fff;
+}
+.main__wrapper {
+  max-width: 1216px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3.375rem;
+  position: relative;
+  overflow: visible;
+}
+
+.main__image_absolute {
+  position: absolute;
+  bottom: -100px;
+  left: 613px;
+  background: url("../../../public/image.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  height: 770px;
+  width: 100%;
+}
+
+.main__upper {
+  width: 768px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main__upper_title {
+  font-size: 3.125rem;
+  font-weight: 700;
+  line-height: 3.75rem;
+  letter-spacing: -0.02em;
+  color: #1a1d1e;
+}
+.main__upper_text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  max-width: 577px;
+  line-height: 1.575rem;
+}
+.main__upper_btn {
+  width: fit-content;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: center;
+  color: white;
+  background-color: rgba(25, 187, 112, 1);
+  padding: 13px 40px;
+  border-radius: 12px;
+  border: none;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+.main__upper_btn:hover,
+.main__upper_btn:active {
+  background-color: black;
+}
+
+.main__bottom {
+  width: 597px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.main__bottom div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main__bottom div p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+  margin: 0;
+  color: rgba(26, 29, 30, 1);
+}
+
+/* BREAKPOINTS ***********************************************************/
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}

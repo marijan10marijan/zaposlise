@@ -1,0 +1,139 @@
+.prijave {
+  width: 100%;
+  margin-block-end: 10rem;
+}
+
+.prijave__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+  max-width: 1200px;
+  margin-inline: auto;
+  width: 95%;
+}
+
+/* LEFT SIDE  **************************************************************************/
+.prijave__left {
+  display: flex;
+  flex-direction: column;
+}
+.prijave__left_title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.625rem;
+  text-align: left;
+  margin-block-end: 1.5rem;
+}
+.prijave__left_title span {
+  font-weight: 400;
+}
+.prijave__left_text {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-block-end: 2.5rem;
+}
+
+.prijave__left_link {
+  background-color: #19bb70;
+  color: white;
+  padding: 13px 40px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  width: fit-content;
+  border-radius: 10px;
+  border: transparent;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.prijave__left_link:hover,
+.prijave__left_link:active {
+  background-color: black;
+}
+/* RIGHT SIDE  **************************************************************************/
+.prijave__right {
+  border-radius: 20px;
+  position: relative;
+}
+
+/* BOTTOM CARD **********************************************************************/
+.prijave__card {
+  position: absolute;
+  top: 5px;
+  left: -80px;
+  width: 192px;
+  height: 76px;
+  padding: 12px 15px;
+  border-radius: 14px;
+  transform: rotate(-15deg);
+  background-color: #ffefdf;
+  box-shadow: 0px 2px 40px 0px #b2b2b240;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.prijave__card p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+}
+.prijave__card p span {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.prijave__right_bottom {
+  position: absolute;
+  left: 11px;
+  bottom: 11px;
+  right: 11px;
+  gap: 10px;
+  border-radius: 1rem;
+  padding: 11px 20px;
+  background-color: white;
+}
+.prijave__right_bottom div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prijave__right_bottom div p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+  text-align: center;
+  margin-block-end: 2px;
+}
+.prijave__right_bottom .prijave__right_bottom_data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4px;
+}
+.prijave__right_bottom .prijave__right_bottom_data p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-block-end: 0px;
+  color: #858597;
+}
+.prijave__right img {
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* BREAKPOINTS ***********************************************************/
+@media (max-width: 1040px) {
+  .prijave__wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}

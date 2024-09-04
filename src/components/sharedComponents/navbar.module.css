@@ -1,0 +1,6 @@
+.nav {
+  height: 68px;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+}

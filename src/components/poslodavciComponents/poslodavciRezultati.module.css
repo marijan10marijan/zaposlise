@@ -1,0 +1,70 @@
+.rezultati {
+  width: 100%;
+}
+
+.rezultati__wrapper {
+  margin-block-end: 160px;
+  max-width: 1380px;
+  margin-inline: auto;
+  border-radius: 30px;
+  background-color: #212131;
+  padding-block: 100px;
+}
+
+/* TITLE  *********************************************************************/
+.rezultati__title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.625rem;
+  text-align: center;
+  color: white;
+  width: min(688px, 90%);
+  margin-inline: auto;
+  margin-block-end: 32px;
+}
+
+/* BUTTONS CONTAINER **************************************************************/
+.rezultati__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: min(723px, 95%);
+  margin-inline: auto;
+  margin-block-end: 60px;
+}
+
+.rezultati__button {
+  padding: 11px 16px;
+  border-radius: 12px;
+  border: transparent;
+  color: white;
+  background-color: rgba(244, 244, 244, 0.2);
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+.rezultati__active_button {
+  background-color: #19bb70;
+  opacity: 1;
+}
+
+/* CHARTS CONTAINER **************************************************************/
+.rezultati__charts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-inline: 15px;
+  gap: 50px;
+}
+
+/* BREAKPOINTS ***********************************************************/
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}

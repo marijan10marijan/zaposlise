@@ -1,0 +1,123 @@
+.korisnici {
+  width: 100%;
+  margin-block-end: 10rem;
+}
+.korisnici__wrapper {
+  max-width: 1380px;
+  width: 95%;
+  margin-inline: auto;
+  border-radius: 30px;
+  background-color: rgba(21, 101, 216, 1);
+  padding: 100px 90px 60px 90px;
+}
+.korisnici__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.korisnici__header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+  color: #fff;
+  margin-block-end: 95px;
+}
+.korisnici__main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 180px;
+  gap: 95px;
+  margin-block-end: 170px;
+  padding-inline-end: 40px;
+}
+.korisnici__main_left {
+  width: 324px;
+  margin-inline-end: 182px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.korisnici__main_left_top h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33.6px;
+  text-align: left;
+  color: white;
+}
+.korisnici__main_left_top p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+  color: white;
+  opacity: 0.5;
+}
+.korisnici__main_left_bottom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.korisnici__main_left_bottom p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  text-align: left;
+  color: white;
+  opacity: 0.5;
+}
+
+.korisnici__main_right p {
+  width: 636px;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+  color: #fff;
+}
+
+.korisnici__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.korisnici__bottom_testimonials {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  justify-content: space-between;
+}
+.korisnici__bottom_testimonials div {
+  padding: 17px 33px;
+}
+.korisnici__bottom_testimonials div img {
+  object-fit: cover;
+  opacity: 0.5;
+}
+.korisnici__bottom_testimonials div img.active {
+  opacity: 1;
+}
+.korisnici__bottom_link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.korisnici__bottom_link p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: white;
+}
+
+/* BREAKPOINTS ***********************************************************/
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}

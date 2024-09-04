@@ -1,0 +1,210 @@
+.pomoc {
+  width: 100%;
+  margin-block-end: 10rem;
+  margin-block-start: 80px;
+}
+.pomoc__container {
+  max-width: 1380px;
+  width: 95%;
+  margin-inline: auto;
+  border-radius: 30px;
+  background-color: #f7f7f8;
+  display: flex;
+  padding-inline: 90px;
+  align-items: center;
+  position: relative;
+}
+
+/* LEFT SIDE ***********************************************************/
+.pomoc__left {
+  flex: 1;
+}
+/* CARD  ****************************************************************/
+.pomoc__left_card {
+  position: absolute;
+  left: 333px;
+  top: 129px;
+  background-color: white;
+  z-index: 3;
+  border-radius: 10px;
+  box-shadow: 0px 2px 40px 0px rgba(178, 178, 178, 0.25);
+  padding: 16px 19px 16px 16px;
+  transform: rotate(10deg);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pomoc__left_card div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.pomoc__left_card div h6 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  color: rgba(26, 29, 30, 1);
+}
+.pomoc__left_card div p {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  color: rgba(133, 133, 151, 1);
+}
+/* ZIVOTOPIS ***********************************************************/
+.pomoc__left_zivotopis {
+  max-width: 344px;
+  width: 100%;
+  padding: 20px 16px;
+  background-color: white;
+  z-index: 2;
+  box-shadow: 0px 2px 40px 0px rgba(178, 178, 178, 0.25);
+  position: absolute;
+  bottom: 240px;
+  left: 139px;
+  transform: rotate(-4.5deg);
+  border-radius: 14px;
+}
+.pomoc__left_zivotopisWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.pomoc__left_zivotopisBox1 {
+  margin-block-end: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.pomoc__left_zivotopisBox1 h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+  color: rgba(26, 29, 30, 1);
+}
+.pomoc__left_zivotopisBox1 p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  color: rgba(26, 29, 30, 1);
+  width: 277px;
+}
+.pomoc__left_zivotopisBox2 {
+  margin-block-end: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pomoc__left_zivotopisBox2 p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  color: rgba(26, 29, 30, 1);
+}
+.pomoc__left_zivotopisBox2 div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pomoc__left_zivotopisBox2 div p {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  color: rgba(26, 29, 30, 1);
+}
+.pomoc__left_zivotopisBox3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.pomoc__left_zivotopisBox3 button {
+  background-color: rgba(25, 187, 112, 1);
+  color: white;
+  border: transparent;
+  height: 50px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.pomoc__left_zivotopisBox3 button:hover,
+.pomoc__left_zivotopisBox3 button:active {
+  background-color: black;
+}
+
+.pomoc__left_zivotopisBox3 p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.3125rem;
+  color: rgba(163, 165, 165, 1);
+}
+.pomoc__left_zivotopisBox3 p span {
+  font-weight: 500;
+}
+
+.pomoc__left_chart {
+  position: absolute;
+  z-index: 1;
+  left: 325px;
+  bottom: 95px;
+}
+.pomoc__left_decorationTop {
+  position: absolute;
+  z-index: 1;
+  top: 92px;
+  left: 497px;
+}
+.pomoc__left_decorationBottom {
+  position: absolute;
+  z-index: 1;
+  left: 99px;
+  bottom: 236px;
+}
+
+/* POMOC RIGHT SIDE *******************************************************/
+.pomoc__right {
+  width: 572px;
+  margin-block: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.pomoc__right_content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.pomoc__right_content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.56rem;
+  color: #1a1d1e;
+}
+.pomoc__right_content p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.56rem;
+  color: #1a1d1e;
+}
+.pomoc__right_link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #19bb70;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+/* BREAKPOINTS ***********************************************************/
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}

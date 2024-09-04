@@ -1,0 +1,36 @@
+.flex__smallcard {
+  border-radius: 1rem;
+  background-color: rgba(247, 247, 248, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 24px 24px 24px;
+  height: 302px;
+}
+.flex__smallcard_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.flex__smallcard_content h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.685rem;
+  color: rgba(26, 29, 30, 1);
+}
+.flex__smallcard_content p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.43rem;
+  color: rgba(133, 133, 151, 1);
+}
+
+/* BREAKPOINTS *************************************************************/
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}

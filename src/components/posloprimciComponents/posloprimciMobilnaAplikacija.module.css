@@ -1,0 +1,66 @@
+.app {
+  width: 100%;
+  margin-block-end: 10rem;
+}
+.app__wrapper {
+  max-width: 1200px;
+  margin-inline: auto;
+  border-radius: 30px;
+  display: flex;
+  gap: 148px;
+  align-items: flex-end;
+}
+.app__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.app__left_top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 572px;
+}
+.app__left_top h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+}
+.app__left_top p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  color: rgba(26, 29, 30, 1);
+}
+.app__left_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.app__left_bottom p {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.687rem;
+}
+.app__left_bottomLinks {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.app__left_bottomLinks img {
+  object-fit: cover;
+}
+.app__right {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* BREAKPOINTS ***********************************************************/
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
