@@ -1,2 +1,33 @@
 .footer {
 }
+.footer__wrapper {
+}
+
+/* FOOTER INFO ***************************************************/
+.footer__info {
+}
+
+/* FOOTER NAV ***************************************************/
+.footer__nav {
+}
+
+/* FOOTER BLOG ***************************************************/
+.footer__blog {
+}
+/* FOOTER NEWSLETTER ***************************************************/
+.footer__newsletter {
+}
+
+/* FOOTER COPY ***************************************************/
+.footer__copy {
+}
+
+/* BREAKPOINTS *************************************************************/
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}

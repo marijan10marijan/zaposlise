@@ -21,6 +21,7 @@ const PosloprimciPage = () => {
       <PosloprimciMobilnaAplikacija />
       {/* GOTOVO */}
       <PosloprimciBlog />
+      {/* GOTOVO */}
       <Kontakt />
       {/* GOTOVO */}
       <Footer />

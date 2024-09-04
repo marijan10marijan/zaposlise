@@ -9,7 +9,7 @@
   margin-inline: auto;
   border-radius: 30px;
   background-color: rgba(247, 247, 248, 1);
-  padding: 100px 90px;
+  padding: 100px 90px !important;
   display: flex;
   flex-direction: column;
   gap: 79px;
@@ -42,11 +42,15 @@
 .blog__blogs_box {
   flex: 1;
 }
+.blog__blogs_boxSmall {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 /* SINGLE BLOG--> BIG CARD ***********************************************************/
 .singleBlogBig {
-  width: 100%;
   border-radius: 12px;
-  overflow: hidden;
+
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -63,25 +67,137 @@
   border-radius: 12px;
 }
 .singleBlogBig_content {
+  padding-inline: 1rem;
+  padding-block-end: 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .singleBlogBig_contentTop {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
-.singleBlogBig_contentTop a{
+.singleBlogBig_contentTop a {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  color: rgba(21, 101, 216, 1);
+  border: 1px solid rgba(21, 101, 216, 1);
+  padding: 5px 11px;
+  border-radius: 6px;
 }
-.singleBlogBig_contentTop span{
+.singleBlogBig_contentTop span {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: rgba(133, 133, 151, 1);
 }
 .singleBlogBig_contentMiddle {
+  width: 474px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-block-end: 0.5rem;
 }
-.singleBlogBig_contentMiddle h6{
+.singleBlogBig_contentMiddle h6 {
+  font-size: 1.4375rem;
+  font-weight: 700;
+  line-height: 1.875rem;
 }
-.singleBlogBig_contentMiddle p{
+.singleBlogBig_contentMiddle p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+
+  padding-block-end: 1.125rem;
 }
 .singleBlogBig_contentBottom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.singleBlogBig_contentBottom a {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: center;
+  color: rgba(25, 187, 112, 1);
 }
 
 /* SINGLE BLOG--> SMALL CARDS ********************************************************/
 .singleBlogSmall {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 12px;
+  background-color: white;
+}
+.singleBlogSmall_imageBox {
+  position: relative;
+  width: 218px;
+  height: 175px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.singleBlogSmall_imageBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+}
+.singleBlogSmall_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.singleBlogSmall_contentTop {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.singleBlogSmall_contentTop a {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  color: rgba(21, 101, 216, 1);
+  border: 1px solid rgba(21, 101, 216, 1);
+  padding: 5px 11px;
+  border-radius: 6px;
+}
+.singleBlogSmall_contentTop span {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: rgba(133, 133, 151, 1);
+}
+.singleBlogSmall_contentMiddle {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-block-end: 0.5rem;
+}
+.singleBlogSmall_contentMiddle h6 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.6875rem;
+  width: 85%;
+  /* text-wrap: balance; */
+}
+
+.singleBlogSmall_contentBottom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.singleBlogSmall_contentBottom a {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: center;
+  color: rgba(25, 187, 112, 1);
 }
 
 /* BREAKPOINTS ***********************************************************/

@@ -31,29 +31,28 @@ const PosloprimciBlog = () => {
               link={"/"}
             />
           </div>
-          <div className={styles.blog__blogs_box}>
+          <div
+            className={`${styles.blog__blogs_box} ${styles.blog__blogs_boxSmall}`}
+          >
             <BlogCardSmall
-              image={""}
+              image={"/smallBlogImage.png"}
               date={"October 13, 2021"}
               category={"Savjeti"}
-              title={""}
-              description={""}
+              title={"Pravo na bonuse za zaposlenike"}
               link={"/"}
             />
             <BlogCardSmall
-              image={""}
+              image={"/smallBlogImage2.png"}
               date={"October 13, 2021"}
               category={"Savjeti"}
-              title={""}
-              description={""}
+              title={"Korisne rečenice na razgovoru za posao"}
               link={"/"}
             />
             <BlogCardSmall
-              image={""}
+              image={"/smallBlogImage.png"}
               date={"October 13, 2021"}
               category={"Savjeti"}
-              title={""}
-              description={""}
+              title={"Pravo na bonuse za zaposlenike"}
               link={"/"}
             />
           </div>
