@@ -15,18 +15,17 @@ const PosloprimciPage = () => {
       <Navbar />
       <PosloprimciPosao />
       <PosloprimciSlider />
-      {/* GOTOVO */}
-      <KakoRadimo />
-      {/* GOTOVO */}
-      <PosloprimciMobilnaAplikacija />
-      {/* GOTOVO */}
-      <PosloprimciBlog />
-      {/* GOTOVO */}
-      <Kontakt />
-      {/* GOTOVO */}
+      {/* <KakoRadimo /> */}
+      {/* <PosloprimciMobilnaAplikacija /> */}
+      {/* <PosloprimciBlog /> */}
+      {/* <Kontakt /> */}
       <Footer />
+      {/* GOTOVO ******************************************************/}
     </div>
   );
 };
 
 export default PosloprimciPage;
+
+
+

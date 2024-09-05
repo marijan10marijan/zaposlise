@@ -16,18 +16,13 @@ const PoslodavciPage = () => {
       <Navbar />
       <PoslodavciMain />
       <PoslodavciPomocVama />
-      {/* GOTOVO */}
       <KakoRadimo />
-      {/* GOTOVO */}
       <PoslodavciNasiKorisnici />
-      {/* GOTOVO */}
       <PoslodavciPrijave />
-      {/* GOTOVO */}
       <PoslodavciRezultati />
-      {/* GOTOVO */}
       <Kontakt />
-      {/* GOTOVO */}
       <Footer />
+      {/* GOTOVO ******************************************************/}
     </div>
   );
 };

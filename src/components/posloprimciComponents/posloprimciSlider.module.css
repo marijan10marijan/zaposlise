@@ -67,13 +67,14 @@
   justify-content: center;
   padding-block: 51px;
 }
-
-/* BREAKPOINTS ***********************************************************/
-@media (max-width: 1040px) {
+/* BREAKPOINTS *************************************************************/
+@media (max-width: 1191px) {
 }
 @media (max-width: 1040px) {
 }
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
 }
-@media (max-width: 1040px) {
+@media (max-width: 498px) {
+}
+@media (max-width: 246px) {
 }
