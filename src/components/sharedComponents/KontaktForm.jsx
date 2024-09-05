@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import styles from "./kontaktForm.module.css";
 
 const KontaktForm = () => {
-  /* STATES FRO INPUTS  ************************************/
+  /* STATES FOR INPUTS  ************************************/
   const [radioInput, setRadioInput] = useState("general");
   const [ime, setIme] = useState("");
   const [tvrtka, setTvrtka] = useState("");

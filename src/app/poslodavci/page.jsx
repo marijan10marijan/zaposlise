@@ -14,13 +14,14 @@ const PoslodavciPage = () => {
   return (
     <div className={styles.poslodavci}>
       <Navbar />
-      <PoslodavciMain />
-      <PoslodavciPomocVama />
-      <KakoRadimo />
-      <PoslodavciNasiKorisnici />
-      <PoslodavciPrijave />
-      <PoslodavciRezultati />
+      {/* <PoslodavciMain /> */}
+      {/* <PoslodavciPomocVama /> */}
+      {/* <KakoRadimo /> */}
+      {/* <PoslodavciNasiKorisnici /> */}
+      {/* <PoslodavciPrijave /> */}
+      {/* <PoslodavciRezultati /> */}
       <Kontakt />
+      {/* GOTOVO ******************************************************/}
       <Footer />
       {/* GOTOVO ******************************************************/}
     </div>

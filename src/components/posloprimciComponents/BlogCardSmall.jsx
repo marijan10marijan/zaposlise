@@ -12,7 +12,7 @@ const BlogCardSmall = ({ image, date, category, title, link }) => {
           alt={`slika koja prikazuje blog: ${title}`}
           fill
           sizes="100%"
-        />
+        /> 
       </div>
       <div className={styles.singleBlogSmall_content}>
         <div className={styles.singleBlogSmall_contentTop}>

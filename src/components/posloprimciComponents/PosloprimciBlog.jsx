@@ -30,7 +30,7 @@ const PosloprimciBlog = () => {
               }
               link={"/"}
             />
-          </div>
+          </div> 
           <div
             className={`${styles.blog__blogs_box} ${styles.blog__blogs_boxSmall}`}
           >

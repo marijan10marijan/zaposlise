@@ -13,12 +13,13 @@ const PosloprimciPage = () => {
   return (
     <div className={styles.div}>
       <Navbar />
-      <PosloprimciPosao />
-      <PosloprimciSlider />
+      {/* <PosloprimciPosao /> */}
+      {/* <PosloprimciSlider /> */}
       {/* <KakoRadimo /> */}
       {/* <PosloprimciMobilnaAplikacija /> */}
-      {/* <PosloprimciBlog /> */}
-      {/* <Kontakt /> */}
+      <PosloprimciBlog />
+      <Kontakt />
+      {/* GOTOVO ******************************************************/}
       <Footer />
       {/* GOTOVO ******************************************************/}
     </div>
@@ -26,6 +27,3 @@ const PosloprimciPage = () => {
 };
 
 export default PosloprimciPage;
-
-
-

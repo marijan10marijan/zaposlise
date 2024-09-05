@@ -13,7 +13,7 @@ const BlogCardBig = ({ image, date, category, title, description, link }) => {
         <div className={styles.singleBlogBig_contentTop}>
           <Link href={link}>{category}</Link>
           <span>{date}</span>
-        </div>
+        </div> 
         <div className={styles.singleBlogBig_contentMiddle}>
           <h6>{title}</h6>
           <p>{description}</p>
