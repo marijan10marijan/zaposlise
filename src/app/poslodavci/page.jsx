@@ -16,7 +16,7 @@ const PoslodavciPage = () => {
       <Navbar />
       {/* <PoslodavciMain /> */}
       {/* <PoslodavciPomocVama /> */}
-      {/* <KakoRadimo /> */}
+      <KakoRadimo />
       {/* <PoslodavciNasiKorisnici /> */}
       {/* <PoslodavciPrijave /> */}
       {/* <PoslodavciRezultati /> */}

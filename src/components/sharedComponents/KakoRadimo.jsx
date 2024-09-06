@@ -25,6 +25,6 @@ const KakoRadimo = () => {
       </div>
     </div>
   );
-};
+}; 
 
 export default KakoRadimo;

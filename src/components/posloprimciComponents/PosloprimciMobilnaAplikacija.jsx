@@ -21,8 +21,9 @@ const PosloprimciMobilnaAplikacija = () => {
           <div className={styles.app__left_bottom}>
             <p>Dostupno na:</p>
             <div className={styles.app__left_bottomLinks}>
-              <Link href={"/"}> 
+              <Link href={"/"}>
                 <Image
+                  className={styles.app__left_bottomLinks_appleImg}
                   src={"/appStore.png"}
                   alt="apple app store trgovina"
                   width={190}
@@ -31,6 +32,7 @@ const PosloprimciMobilnaAplikacija = () => {
               </Link>
               <Link href={"/"}>
                 <Image
+                  className={styles.app__left_bottomLinks_googleImg}
                   src={"/googlePlay.png"}
                   alt="google play trgovina"
                   width={208}

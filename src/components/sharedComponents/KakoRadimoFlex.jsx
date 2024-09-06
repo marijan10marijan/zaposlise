@@ -334,7 +334,7 @@ const KakoRadimoFlex = () => {
                 height={588}
                 alt="pozadinska slika na kartici"
               />
-            </div>
+            </div> 
             <div className={styles.bigCardTwo__content}>
               <Image
                 src={"/check.png"}
