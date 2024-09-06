@@ -21,7 +21,7 @@ const PosloprimciMobilnaAplikacija = () => {
           <div className={styles.app__left_bottom}>
             <p>Dostupno na:</p>
             <div className={styles.app__left_bottomLinks}>
-              <Link href={"/"}>
+              <Link href={"/"}> 
                 <Image
                   src={"/appStore.png"}
                   alt="apple app store trgovina"

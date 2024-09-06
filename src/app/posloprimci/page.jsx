@@ -16,8 +16,9 @@ const PosloprimciPage = () => {
       {/* <PosloprimciPosao /> */}
       {/* <PosloprimciSlider /> */}
       {/* <KakoRadimo /> */}
-      {/* <PosloprimciMobilnaAplikacija /> */}
+      <PosloprimciMobilnaAplikacija />
       <PosloprimciBlog />
+      {/* GOTOVO ******************************************************/}
       <Kontakt />
       {/* GOTOVO ******************************************************/}
       <Footer />
