@@ -6,6 +6,7 @@
 
 .flex__container {
   display: flex;
+  align-items: stretch;
   gap: 1rem;
 }
 
@@ -110,13 +111,66 @@
 
 /* BREAKPOINTS *************************************************************/
 @media (max-width: 1191px) {
+  .bigCard__image {
+    right: 19px;
+  }
+  .bigCard__image img {
+    height: 356px;
+    width: 333px;
+  }
 }
 @media (max-width: 1040px) {
+  .flex__section:nth-child(2),
+  .flex__section:nth-child(4) {
+    flex: 1;
+    width: 100%;
+  }
+  .flex__container {
+    flex-direction: column;
+  }
+  .flex__container:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .bigCardTwo__content {
+    width: 360px;
+  }
+  .bigCard {
+    height: 500px;
+  }
+  .bigCard__image img {
+    height: 416px;
+    width: 433px;
+  }
 }
 @media (max-width: 768px) {
+  .bigCard__image img {
+    height: 326px;
+  }
+  .bigCardTwo__content {
+    width: 260px;
+  }
 }
+
+@media (max-width: 630px) {
+  .bigCard__image img {
+    width: 293px;
+  }
+}
+
 @media (max-width: 498px) {
+  .bigCard {
+    height: 587px;
+  }
+  .flex__smallCards {
+    grid-template-columns: 1fr;
+  }
 }
-@media (max-width: 246px) {
+@media (max-width: 346px) {
+  .bigCard__image img {
+    width: 193px;
+    height: 250px;
+  }
+  .bigCard__content {
+    width: 100%;
+  }
 }
- 

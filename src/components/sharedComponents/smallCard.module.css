@@ -29,6 +29,9 @@
 @media (max-width: 1191px) {
 }
 @media (max-width: 1040px) {
+  .flex__smallcard {
+    height: 250px;
+  }
 }
 @media (max-width: 768px) {
 }

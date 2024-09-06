@@ -10,7 +10,7 @@ const SmallCard = ({ card }) => {
         <p>{card.text}</p>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default SmallCard;
