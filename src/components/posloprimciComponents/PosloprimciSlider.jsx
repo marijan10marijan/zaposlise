@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import styles from "./posloprimciSlider.module.css";
 import SliderItem from "./SliderItem";
+import useScreenSize from "@/utils/useScreenSize";
 
 const sliderData = [
   {
@@ -39,6 +40,7 @@ const sliderData = [
 ];
 
 const PosloprimciSlider = () => {
+  const screenSize = useScreenSize();
   const [activeItem, setActiveItem] = useState(0);
 
   const handleActiveItem = () => {
@@ -52,13 +54,25 @@ const PosloprimciSlider = () => {
 
   return (
     <section className={styles.slider}>
-      <div className={styles.slider__wrapper} onClick={handleActiveItem}>
-        {sliderData.map((item, index) => (
-          <React.Fragment key={item.number}>
-            {index === activeItem ? <SliderItem item={item} /> : null}
-          </React.Fragment>
-        ))}
-      </div>
+      {screenSize.width >= 1040 ? (
+        <div className={styles.slider__wrapper} onClick={handleActiveItem}>
+          {sliderData.map((item, index) => (
+            <React.Fragment key={item.number}>
+              {index === activeItem ? <SliderItem item={item} /> : null}
+            </React.Fragment>
+          ))}
+        </div>
+      ) : (
+        <div
+          className={`${styles.slider__wrapper} ${styles.slider__wrapper_smallScreens}`}
+        >
+          {sliderData.map((item) => (
+            <React.Fragment key={item.number}>
+              <SliderItem item={item} />
+            </React.Fragment>
+          ))}
+        </div>
+      )}
     </section>
   );
 };

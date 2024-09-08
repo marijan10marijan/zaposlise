@@ -155,6 +155,19 @@
   .bigCard__image img {
     width: 293px;
   }
+  .bigCardTwo {
+    height: 959px;
+  }
+  .bigCardTwo__image {
+    top: 380px;
+  }
+  .bigCardTwo__content {
+    width: 80%;
+    gap: 1.5rem;
+  }
+  .bigCardTwo__content img {
+    margin-block-end: 0px;
+  }
 }
 
 @media (max-width: 498px) {
@@ -163,6 +176,17 @@
   }
   .flex__smallCards {
     grid-template-columns: 1fr;
+  }
+  .bigCardTwo__content {
+    width: 100%;
+    text-wrap: balance;
+  }
+  .bigCardTwo__image {
+    right: -30px;
+    top: 455px;
+  }
+  .bigCardTwo__image img {
+    height: 504px;
   }
 }
 @media (max-width: 346px) {

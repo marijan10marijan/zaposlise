@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 24px 24px 24px;
+  padding: 1.25rem 1.5rem 1.5rem 1.5rem;
   height: 302px;
 }
 .flex__smallcard_content {
@@ -30,12 +30,31 @@
 }
 @media (max-width: 1040px) {
   .flex__smallcard {
-    height: 250px;
+    height: 275px;
+  }
+  .flex__smallcard_content p {
+    flex-wrap: balance;
   }
 }
-@media (max-width: 768px) {
-}
 @media (max-width: 498px) {
+  .flex__smallcard {
+    height: 250px;
+  }
+  .flex__smallcard_content h5 {
+    text-wrap: balance;
+  }
 }
-@media (max-width: 246px) {
+@media (max-width: 296px) {
+  .flex__smallcard {
+    padding: 0.75rem 1rem 1rem 1rem;
+    height: auto;
+  }
+  .flex__smallcard_icon {
+    width: 24px;
+    height: 24px;
+    margin-block-end: 1.5rem;
+  }
+  .flex__smallcard_content h5 {
+    word-wrap: break-word;
+  }
 }

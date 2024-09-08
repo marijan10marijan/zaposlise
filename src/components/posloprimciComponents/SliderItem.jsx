@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./posloprimciSlider.module.css";
 import Image from "next/image";
-
+ 
 const SliderItem = ({ item }) => {
   return (
     <div className={styles.slider__box}>

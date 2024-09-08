@@ -3,6 +3,7 @@
 }
 .slider__wrapper {
   max-width: 1380px;
+  width: 95%;
   margin-inline: auto;
   position: relative;
 }
@@ -50,7 +51,7 @@
   width: 469px;
   font-size: 3rem;
   font-weight: 700;
-  line-height: 57.6px;
+  line-height: 3.6rem;
 }
 .slider__left_text {
   width: 469px;
@@ -69,12 +70,104 @@
 }
 /* BREAKPOINTS *************************************************************/
 @media (max-width: 1191px) {
+  .slider__wrapper {
+    width: 100%;
+    padding-inline: 1rem;
+  }
 }
 @media (max-width: 1040px) {
+  .slider {
+    margin-block-end: 5rem;
+  }
+  .slider__wrapper_smallScreens {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .slider__left {
+    padding-inline: 1.5rem;
+  }
+  .slider__left_number {
+    top: 30px;
+    left: 55px;
+    font-size: 200px;
+  }
+
+  .slider__left_title {
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+  }
+  .slider__left_text {
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .slider__right {
+    padding-block-start: 35px;
+    padding-block-end: 20px;
+  }
 }
 @media (max-width: 768px) {
+  .slider__left_title {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .slider__right {
+    padding-block-end: 0px;
+  }
+  .slider__box {
+    flex-direction: column;
+  }
+  .slider__left {
+    float: 0;
+    padding-block-end: 2.5rem;
+    padding-block-start: 5rem;
+  }
+  .slider__left_number {
+    left: auto;
+    right: 27px;
+    top: 10px;
+    font-size: 140px;
+  }
+  .slider__left_title {
+    font-size: 2rem;
+    line-height: 2.35rem;
+  }
+  .slider__box {
+    animation: none;
+    cursor: none;
+    height: 750px;
+  }
+  .slider__right {
+    position: relative;
+    height: 424px;
+    flex: 1;
+    overflow: hidden;
+  }
+  .slider__right img {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 274px;
+    height: 530px;
+  }
 }
 @media (max-width: 498px) {
+  .slider__left_number {
+    right: 23px;
+    top: 10px;
+    font-size: 100px;
+  }
+  .slider__left_title {
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+  }
+  .slider__left_text {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
 }
 @media (max-width: 246px) {
 }
