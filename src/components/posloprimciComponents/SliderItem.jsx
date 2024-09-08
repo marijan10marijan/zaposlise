@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./posloprimciSlider.module.css";
 import Image from "next/image";
- 
+
 const SliderItem = ({ item }) => {
   return (
-    <div className={styles.slider__box}>
-      <div
-        className={styles.slider__left}
-        style={{ background: item.backgroundWithOpacity }}
-      >
+    <div
+      className={styles.slider__box}
+      style={{ background: item.backgroundWithOpacity }}
+    >
+      <div className={styles.slider__left}>
         <p
           style={{ color: item.backgroundColor, opacity: 0.15 }}
           className={styles.slider__left_number}

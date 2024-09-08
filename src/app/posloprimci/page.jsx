@@ -13,8 +13,9 @@ const PosloprimciPage = () => {
   return (
     <div className={styles.div}>
       <Navbar />
-      {/* <PosloprimciPosao /> */}
+      <PosloprimciPosao />
       <PosloprimciSlider />
+      {/* GOTOVO ******************************************************/}
       <KakoRadimo />
       {/* GOTOVO ******************************************************/}
       <PosloprimciMobilnaAplikacija />

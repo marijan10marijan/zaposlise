@@ -120,7 +120,7 @@
     flex-direction: column;
   }
   .slider__left {
-    float: 0;
+    flex: 0;
     padding-block-end: 2.5rem;
     padding-block-start: 5rem;
   }
@@ -133,6 +133,10 @@
   .slider__left_title {
     font-size: 2rem;
     line-height: 2.35rem;
+    flex-wrap: balance;
+  }
+  .slider__left_text {
+    flex-wrap: balance;
   }
   .slider__box {
     animation: none;
@@ -142,7 +146,9 @@
   .slider__right {
     position: relative;
     height: 424px;
+    width: auto;
     flex: 1;
+    border-radius: 30px;
     overflow: hidden;
   }
   .slider__right img {
@@ -168,6 +174,4 @@
     font-size: 0.875rem;
     line-height: 1.3125rem;
   }
-}
-@media (max-width: 246px) {
 }

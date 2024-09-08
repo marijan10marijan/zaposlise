@@ -48,7 +48,7 @@
   line-height: 1.5rem;
   width: fit-content;
   color: white;
-  transition: all 200ms ease;
+  transition: all 200ms linear;
 }
 .rad__header_link:hover,
 .rad__header_link:active {

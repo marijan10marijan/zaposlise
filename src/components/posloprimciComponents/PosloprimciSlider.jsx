@@ -8,7 +8,7 @@ const sliderData = [
   {
     number: 1,
     title: "Netrebaš životopis",
-    text: "Danas, životopis više nije ključan element. Naša platforma je dizajnirana da tvoj profil postane snažan alat, jednostavno pretvarajući osnovne informacije u impresivnu prijavu. Ako već imaš životopis, možeš ga priložiti na svoj profil.",
+    text: "Danas, životopis više nije ključan element prijave na posao. Naša platforma je dizajnirana da tvoj profil postane snažan alat, jednostavno pretvarajući osnovne informacije u impresivnu prijavu. Ako već imaš životopis, možeš ga priložiti na svoj profil.",
     backgroundColor: "rgba(21, 101, 216, 1)",
     backgroundWithOpacity: "rgba(21, 101, 216, 0.1)",
     image: "/sliderImage1.png",
