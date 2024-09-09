@@ -14,6 +14,7 @@ const PosloprimciPage = () => {
     <div className={styles.div}>
       <Navbar />
       <PosloprimciPosao />
+      {/* GOTOVO ******************************************************/}
       <PosloprimciSlider />
       {/* GOTOVO ******************************************************/}
       <KakoRadimo />

@@ -3,32 +3,42 @@ import styles from "./posloprimciPosao.module.css";
 
 const data = [
   {
-    image: "/posaoImage.png",
+    image: "/cardBackground1.png",
     name: "Marica Petrović",
     jobPosition: "kuhar",
   },
   {
-    image: "/posaoImage.png",
+    image: "/cardBackground2.png",
     name: "Marica Petrović",
     jobPosition: "kuhar",
   },
   {
-    image: "/posaoImage.png",
+    image: "/cardBackground3.png",
     name: "Marica Petrović",
     jobPosition: "developer",
   },
   {
-    image: "/posaoImage.png",
+    image: "/cardBackground4.png",
     name: "Marica Petrović",
     jobPosition: "vozač",
   },
   {
-    image: "/posaoImage.png",
+    image: "/cardBackground5.png",
     name: "Marica Petrović",
     jobPosition: "kuhar",
   },
   {
-    image: "/posaoImage.png",
+    image: "/cardBackground6.png",
+    name: "Marica Petrović",
+    jobPosition: "developer",
+  },
+  {
+    image: "/cardBackground6.png",
+    name: "Marica Petrović",
+    jobPosition: "developer",
+  },
+  {
+    image: "/cardBackground6.png",
     name: "Marica Petrović",
     jobPosition: "developer",
   },
@@ -36,7 +46,7 @@ const data = [
 
 const PosloprimciPosaoSlider = () => {
   return (
-    <div className={styles.posao__sliderCardBox}>
+    <>
       {data.map((item, index) => (
         <article
           className={styles.posao__card}
@@ -54,7 +64,7 @@ const PosloprimciPosaoSlider = () => {
           <button className={styles.posao__card_job}>{item.jobPosition}</button> */}
         </article>
       ))}
-    </div>
+    </>
   );
 };
 
