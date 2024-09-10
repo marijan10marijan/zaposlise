@@ -12,7 +12,7 @@ const PoslodavciPage = () => {
   return (
     <div className={styles.poslodavci}>
       {/* <PoslodavciMain /> */}
-      {/* <PoslodavciPomocVama /> */}
+      <PoslodavciPomocVama />
       <KakoRadimo />
       <PoslodavciNasiKorisnici />
       <PoslodavciPrijave />

@@ -136,7 +136,7 @@ const PoslodavciPomocVama = () => {
               </div>
             </div>
           </div>
-          {/* CHART ***************************************/}
+          {/* CHART ***************************************/} 
           <div className={styles.pomoc__left_chart}>
             <Image
               src={"/zaposliseChart.png"}
