@@ -4,7 +4,7 @@ import styles from "./posloprimciSlider.module.css";
 import SliderItem from "./SliderItem";
 import useScreenSize from "@/utils/useScreenSize";
 
-const sliderData = [
+const sliderData = [ 
   {
     number: 1,
     title: "Netrebaš životopis",
