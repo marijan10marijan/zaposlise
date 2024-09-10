@@ -191,7 +191,7 @@
   }
   .prijave__right {
     flex: 1;
-    width: calc(100%-42px);
+    width: calc(100% - 42px);
   }
 }
 
