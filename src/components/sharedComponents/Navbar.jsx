@@ -25,7 +25,7 @@ const Navbar = () => {
           <li>
             <Link
               href={"/"}
-              className={isActive("/") ? styles.nav__links_active : ""}
+              className={isActive("") ? styles.nav__links_active : ""}
             >
               Naslovna
             </Link>
@@ -53,7 +53,9 @@ const Navbar = () => {
           <li>
             <Link
               href={"/kalkulator"}
-              className={isActive("kalkulator") ? styles.nav__links_active : ""}
+              className={
+                isActive("/kalkulator") ? styles.nav__links_active : ""
+              }
             >
               Kalkulator
             </Link>
@@ -61,7 +63,7 @@ const Navbar = () => {
           <li>
             <Link
               href={"/blog"}
-              className={isActive("blog") ? styles.nav__links_active : ""}
+              className={isActive("/blog") ? styles.nav__links_active : ""}
             >
               Blog
             </Link>
