@@ -1,29 +1,31 @@
 .pomoc {
   width: 100%;
   margin-block-end: 10rem;
-  margin-block-start: 80px;
+  margin-block-start: 5rem;
 }
 .pomoc__container {
   max-width: 1380px;
-  width: 95%;
+  width: 97%;
   margin-inline: auto;
   border-radius: 30px;
   background-color: #f7f7f8;
   display: flex;
   padding-inline: 90px;
   align-items: center;
-  position: relative;
+  height: 760px;
 }
 
 /* LEFT SIDE ***********************************************************/
 .pomoc__left {
   flex: 1;
+  position: relative;
+  height: 100%;
 }
 /* CARD  ****************************************************************/
 .pomoc__left_card {
   position: absolute;
   left: 333px;
-  top: 129px;
+  bottom: 554px;
   background-color: white;
   z-index: 3;
   border-radius: 10px;
@@ -153,7 +155,7 @@
 .pomoc__left_decorationTop {
   position: absolute;
   z-index: 1;
-  top: 92px;
+  bottom: 634px;
   left: 497px;
 }
 .pomoc__left_decorationBottom {
@@ -200,9 +202,68 @@
 }
 
 /* BREAKPOINTS *************************************************************/
-@media (max-width: 1191px) {
+@media (max-width: 1301px) {
+  .pomoc__container {
+    padding-inline: 1.5rem;
+  }
+  .pomoc__left_card {
+    left: 234px;
+    bottom: 100px;
+  }
+  .pomoc__left_zivotopis {
+    left: 40px;
+    bottom: 50px;
+  }
+  .pomoc__left_chart {
+    left: 226px;
+    bottom: 30px;
+  }
+  .pomoc__left_decorationTop {
+    left: 376px;
+    bottom: 200px;
+  }
+  .pomoc__left_decorationBottom {
+    left: 22px;
+    bottom: 110px;
+  }
 }
-@media (max-width: 1040px) { 
+@media (max-width: 1191px) {
+  .pomoc__right {
+    width: 400px;
+  }
+  .pomoc__right_content h2 {
+    font-size: 2.1rem;
+    line-height: 2.75rem;
+  }
+  .pomoc__right_content p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+@media (max-width: 1040px) {
+  .pomoc {
+    margin-block-end: 5rem;
+  }
+  .pomoc__container {
+    padding-block: 100px;
+    width: 100%;
+    margin-inline: 1rem;
+    flex-direction: column;
+    height: 1000px;
+  }
+  .pomoc__left {
+    height: 50%;
+  }
+  .pomoc__left_zivotopis {
+    width: 500px;
+  }
+  .pomoc__left_zivotopisBox1 p {
+    width: 100%;
+  }
+  .pomoc__right {
+    flex: 1;
+    margin-block: 0;
+  }
 }
 @media (max-width: 768px) {
 }
