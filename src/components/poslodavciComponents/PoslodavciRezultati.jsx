@@ -8,7 +8,7 @@ const PoslodavciRezultati = () => {
       <div className={styles.rezultati__wrapper}>
         <h2 className={styles.rezultati__title}>
           Pogledajte rezultate za samo neke od naših oglasa
-        </h2> 
+        </h2>
         <div className={styles.rezultati__buttons}>
           <button
             className={`${styles.rezultati__button} ${styles.rezultati__active_button}`}
@@ -24,18 +24,21 @@ const PoslodavciRezultati = () => {
         </div>
         <div className={styles.rezultati__charts}>
           <Image
+            className={styles.rezultati__charts_img}
             src={"/chart.png"}
             alt="chart kartica koja pokazuje oglas za posao"
             width={280}
             height={488}
           />
           <Image
+            className={styles.rezultati__charts_img}
             src={"/chart.png"}
             alt="chart kartica koja pokazuje oglas za posao"
             width={280}
             height={488}
           />
           <Image
+            className={styles.rezultati__charts_img}
             src={"/chart.png"}
             alt="chart kartica koja pokazuje oglas za posao"
             width={280}

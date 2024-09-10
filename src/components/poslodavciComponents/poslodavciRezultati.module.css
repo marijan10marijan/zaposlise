@@ -51,12 +51,15 @@
 
 /* CHARTS CONTAINER **************************************************************/
 .rezultati__charts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 280px;
+  place-content: center;
   margin-inline: 15px;
   gap: 50px;
   overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
 }
 
 /* BREAKPOINTS *************************************************************/
@@ -73,9 +76,7 @@
   .rezultati__charts {
     padding-inline-start: 1.5rem;
     margin-inline: 0px;
-    justify-content: flex-start;
-    overscroll-behavior-inline: contain;
-    scroll-snap-type: inline mandatory;
+    place-content: start;
     scroll-padding-inline-start: 1.5rem;
     scrollbar-width: none;
   }
@@ -108,8 +109,6 @@
     gap: 14px;
     width: 100%;
     overflow-x: auto;
-    overscroll-behavior-inline: contain;
-    scroll-snap-type: inline mandatory;
     scroll-padding-inline-start: 1.5rem;
     scrollbar-width: none;
   }
