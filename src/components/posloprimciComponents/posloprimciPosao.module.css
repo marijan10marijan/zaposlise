@@ -78,7 +78,7 @@
   background-color: black;
 }
 .posao__slider {
-  max-width: 1460px;
+  max-width: 1610px;
   margin-inline: auto;
   padding-inline-start: 30px;
   display: grid;
@@ -89,15 +89,45 @@
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
   scroll-padding-inline-start: 30px;
+  scrollbar-width: none;
+}
+.posao__slider::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  display: none;
+}
+.posao__slider::-webkit-scrollbar-thumb {
+  display: none;
 }
 
 .posao__card {
   height: 340px;
   scroll-snap-align: start;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.15);
+  background-blend-mode: multiply;
 }
 .posao__card_name {
+  position: absolute;
+  bottom: 54px;
+  left: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: white;
 }
 .posao__card_job {
+  position: absolute;
+  font-size: 0.9125rem;
+  font-weight: 400;
+  line-height: 1.368rem;
+  bottom: 1rem;
+  left: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 1);
+  padding: 4px 10px;
+  border-radius: 100px;
+  background-color: transparent;
+  color: white;
 }
 
 /* BREAKPOINTS *************************************************************/
@@ -125,6 +155,7 @@
   }
   .posao__slider {
     padding-inline-start: 1.5rem;
+    scroll-padding-inline-start: 1.5rem;
   }
 }
 @media (max-width: 498px) {

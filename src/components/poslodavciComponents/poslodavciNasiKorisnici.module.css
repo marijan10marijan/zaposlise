@@ -24,17 +24,16 @@
 }
 .korisnici__main {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
   min-height: 180px;
   gap: 95px;
   margin-block-end: 170px;
-  padding-inline-end: 40px;
+  padding-inline-end: 2.5rem;
 }
 .korisnici__main_left {
   width: 324px;
   margin-inline-end: 182px;
-  min-height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -67,6 +66,10 @@
   text-align: left;
   color: white;
   opacity: 0.5;
+}
+.korisnici__main_left_bottom div {
+  display: flex;
+  gap: 1.25rem;
 }
 
 .korisnici__main_right p {
@@ -114,12 +117,104 @@
 
 /* BREAKPOINTS *************************************************************/
 @media (max-width: 1191px) {
+  .korisnici__wrapper {
+    width: 100%;
+    padding-inline: 1.5rem;
+    padding-block-start: 4rem;
+    padding-block-end: 2.5rem;
+    border-radius: 0px;
+  }
 }
 @media (max-width: 1040px) {
+  .korisnici {
+    margin-block-end: 5rem;
+  }
+  .korisnici__main_right p {
+    width: 100%;
+    font-size: 1.75rem;
+    line-height: 2.6rem;
+  }
+  .korisnici__header h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-block-end: 48px;
+  }
+  .korisnici__header svg {
+    width: 104px;
+    height: 104px;
+  }
+  .korisnici__main {
+    align-items: stretch;
+    padding-inline-end: 0px;
+    margin-block-end: 5rem;
+  }
+  .korisnici__main_left {
+    flex: 1;
+    margin-inline-end: 0px;
+  }
+  .korisnici__main_right {
+    flex: 2;
+  }
+  .korisnici__bottom_link {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
+  .korisnici__header svg {
+    display: none;
+  }
+  .korisnici__header h2 {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+  .korisnici__main {
+    margin-block-end: 4rem;
+    gap: 2.5rem;
+    min-height: auto;
+  }
+  .korisnici__main_left {
+    gap: 37px;
+  }
+  .korisnici__main_right p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 @media (max-width: 498px) {
-}
-@media (max-width: 246px) {
+  .korisnici__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-block-end: 0px;
+  }
+  .korisnici__header {
+    order: 1;
+  }
+  .korisnici__main {
+    order: 3;
+  }
+  .korisnici__bottom {
+    order: 2;
+    margin-block-end: 3rem;
+  }
+  .korisnici__header h2 {
+    font-size: 1.75rem;
+    line-height: 2.45rem;
+  }
+  .korisnici__main {
+    margin-block-end: 2.5rem;
+    flex-direction: column;
+    gap: 135px;
+  }
+  .korisnici__main_left {
+    order: 2;
+  }
+  .korisnici__main_right {
+    order: 1;
+    flex: 1;
+  }
+  .korisnici__main_left_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

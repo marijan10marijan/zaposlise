@@ -127,12 +127,97 @@
 
 /* BREAKPOINTS *************************************************************/
 @media (max-width: 1191px) {
+  .prijave__wrapper {
+    width: 100%;
+    padding-inline: 1rem;
+    gap: 5rem;
+  }
 }
 @media (max-width: 1040px) {
+  .prijave {
+    margin-block-end: 5rem;
+  }
+  .prijave__left_title {
+    font-size: 2.4rem;
+    line-height: 3.125rem;
+  }
+  .prijave__right_img {
+    width: 380px;
+    height: 485px;
+  }
 }
 @media (max-width: 768px) {
+  .prijave__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  .prijave__left_title {
+    width: 80%;
+    text-wrap: balance;
+  }
+  .prijave__left_text {
+    width: 80%;
+    margin-block-end: 2rem;
+  }
+  .prijave__right {
+    margin-inline-start: 42px;
+  }
+  .prijave__card {
+    width: 117px;
+    height: 46px;
+    left: -35px;
+    gap: 5px;
+  }
+  .prijave__card img {
+    width: 24px;
+    height: 24px;
+  }
+  .prijave__card p {
+    font-size: 0.68rem;
+    line-height: 0.678rem;
+  }
+  .prijave__card p span {
+    font-size: 1.2rem;
+    line-height: 1.1975rem;
+  }
 }
+@media (max-width: 558px) {
+  .prijave__left_title {
+    width: 100%;
+  }
+  .prijave__left_text {
+    width: 100%;
+  }
+}
+
 @media (max-width: 498px) {
+  .prijave__left_title {
+    text-wrap: balance;
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+  }
+
+  .prijave__left_text {
+    font-size: 0.875rem;
+    line-height: 1.225rem;
+  }
+  .prijave__left_link {
+    width: 100%;
+  }
+  .prijave__right {
+    flex: 1;
+  }
+  .prijave__right_img {
+    width: 100%;
+    height: 343px;
+  }
+  .prijave__right_bottom {
+    padding: 0;
+  }
+  .prijave__right_bottom div {
+    display: none;
+  }
 }
 @media (max-width: 246px) {
 }

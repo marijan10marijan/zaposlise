@@ -56,12 +56,10 @@ const PosloprimciPosaoSlider = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             borderRadius: "15px",
-            width: "270px",
-            height: "340px",
           }}
         >
-          {/* <p className={styles.posao__card_name}>{item.name}</p>
-          <button className={styles.posao__card_job}>{item.jobPosition}</button> */}
+          <p className={styles.posao__card_name}>{item.name}</p>
+          <button className={styles.posao__card_job}>{item.jobPosition}</button>
         </article>
       ))}
     </>

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./poslodavciNasiKorisnici.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const PoslodavciNasiKorisnici = () => {
   return (
@@ -33,7 +34,7 @@ const PoslodavciNasiKorisnici = () => {
                 <rect width="147" height="147" fill="white" />
               </clipPath>
             </defs>
-          </svg> 
+          </svg>
         </div>
         {/* MAIN **************** ************************/}
         <div className={styles.korisnici__main}>
@@ -43,63 +44,66 @@ const PoslodavciNasiKorisnici = () => {
               <p>Direktor, Samoborček</p>
             </div>
             <div className={styles.korisnici__main_left_bottom}>
-              <svg
-                width="42"
-                height="42"
-                viewBox="0 0 42 42"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="-0.5"
-                  y="0.5"
-                  width="41"
-                  height="41"
-                  rx="20.5"
-                  transform="matrix(-1 0 0 1 41 0)"
-                  stroke="white"
-                />
-                <path
-                  d="M29.25 21H12.75"
-                  stroke="white"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M19.5 14.25L12.75 21L19.5 27.75"
-                  stroke="white"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <svg
-                width="42"
-                height="42"
-                viewBox="0 0 42 42"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="0.5"
-                  y="0.5"
-                  width="41"
-                  height="41"
-                  rx="20.5"
-                  stroke="white"
-                />
-                <path
-                  d="M12.75 21H29.25"
-                  stroke="white"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M22.5 14.25L29.25 21L22.5 27.75"
-                  stroke="white"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <div>
+                <svg
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="-0.5"
+                    y="0.5"
+                    width="41"
+                    height="41"
+                    rx="20.5"
+                    transform="matrix(-1 0 0 1 41 0)"
+                    stroke="white"
+                  />
+                  <path
+                    d="M29.25 21H12.75"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M19.5 14.25L12.75 21L19.5 27.75"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <svg
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="41"
+                    height="41"
+                    rx="20.5"
+                    stroke="white"
+                  />
+                  <path
+                    d="M12.75 21H29.25"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M22.5 14.25L29.25 21L22.5 27.75"
+                    stroke="white"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+
               <p>1/5</p>
             </div>
           </div>
@@ -133,7 +137,7 @@ const PoslodavciNasiKorisnici = () => {
               <Image src={"/weishaupt.png"} alt="" height={32} width={153} />
             </div>
           </div>
-          <div className={styles.korisnici__bottom_link}>
+          <Link href={"/"} className={styles.korisnici__bottom_link}>
             <p>Show more</p>
             <svg
               width="14"
@@ -157,7 +161,7 @@ const PoslodavciNasiKorisnici = () => {
                 </clipPath>
               </defs>
             </svg>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

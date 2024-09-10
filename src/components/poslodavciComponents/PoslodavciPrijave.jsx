@@ -24,7 +24,13 @@ const PoslodavciPrijave = () => {
           </Link>
         </div>
         <div className={styles.prijave__right}>
-          <Image src={"/chef.png"} alt="zena kuhar" width={480} height={550} />
+          <Image
+            className={styles.prijave__right_img}
+            src={"/chef.png"}
+            alt="zena kuhar"
+            width={480}
+            height={550}
+          />
           <div className={styles.prijave__right_bottom}>
             <div>
               <p>Marica Petrović</p>
