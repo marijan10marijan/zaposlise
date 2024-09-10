@@ -1,10 +1,11 @@
 .rezultati {
   width: 100%;
+  margin-block-end: 10rem;
 }
 
 .rezultati__wrapper {
-  margin-block-end: 160px;
   max-width: 1380px;
+  width: 95%;
   margin-inline: auto;
   border-radius: 30px;
   background-color: #212131;
@@ -20,7 +21,7 @@
   color: white;
   width: min(688px, 90%);
   margin-inline: auto;
-  margin-block-end: 32px;
+  margin-block-end: 2rem;
 }
 
 /* BUTTONS CONTAINER **************************************************************/
@@ -28,11 +29,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 8px;
   width: min(723px, 95%);
   margin-inline: auto;
-  margin-block-end: 60px;
+  margin-block-end: 56px;
 }
 
 .rezultati__button {
@@ -54,19 +54,79 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   margin-inline: 15px;
   gap: 50px;
+  overflow-x: auto;
 }
 
 /* BREAKPOINTS *************************************************************/
 @media (max-width: 1191px) {
-} 
+  .rezultati__wrapper {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
 @media (max-width: 1040px) {
+  .rezultati {
+    margin-block-end: 5rem;
+  }
+  .rezultati__charts {
+    padding-inline-start: 1.5rem;
+    margin-inline: 0px;
+    justify-content: flex-start;
+    scroll-padding-inline-start: 1.5rem;
+    scrollbar-width: none;
+  }
+  .rezultati__charts::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  .rezultati__charts::-webkit-scrollbar-thumb {
+    display: none;
+  }
+  .rezultati__buttons {
+    padding-inline-start: 1.5rem;
+  }
 }
 @media (max-width: 768px) {
+  .rezultati__wrapper {
+    padding-block: 60px;
+  }
+  .rezultati__title {
+    font-size: 2.4rem;
+    line-height: 3.125rem;
+    text-wrap: balance;
+  }
+  .rezultati__charts {
+    gap: 1rem;
+  }
+  .rezultati__buttons {
+    justify-content: flex-start;
+    gap: 14px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-padding-inline-start: 1.5rem;
+    scrollbar-width: none;
+  }
+  .rezultati__buttons::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  .rezultati__buttons::-webkit-scrollbar-thumb {
+    display: none;
+  }
 }
 @media (max-width: 498px) {
+  .rezultati__title {
+    width: 100%;
+    margin-block-end: 2.5rem;
+    padding-inline: 2rem;
+    font-size: 28px;
+    line-height: 33.6px;
+    text-align: center;
+  }
 }
 @media (max-width: 246px) {
 }
