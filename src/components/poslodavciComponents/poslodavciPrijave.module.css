@@ -207,6 +207,7 @@
   }
   .prijave__right {
     flex: 1;
+    width: 100%;
   }
   .prijave__right_img {
     width: 100%;
