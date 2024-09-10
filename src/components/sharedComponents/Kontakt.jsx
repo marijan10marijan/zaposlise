@@ -13,7 +13,7 @@ const Kontakt = () => {
             <a href="tel:+1012 3456 789" target="_blank">
               <div>
                 <Image
-                  src={"/call.jpg"}
+                  src={"/Call.jpg"}
                   alt="ikona poziva"
                   width={24}
                   height={24}
