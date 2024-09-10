@@ -22,7 +22,7 @@ const PoslodavciPomocVama = () => {
             </div>
           </div>
           {/* ZIVOTOPIS **********************************/}
-          <div className={styles.pomoc__left_zivotopis}> 
+          <div className={styles.pomoc__left_zivotopis}>
             <div className={styles.pomoc__left_zivotopisWrapper}>
               <div className={styles.pomoc__left_zivotopisBox1}>
                 <h6>Jeste li vi naš novi dizajner?</h6>
@@ -136,7 +136,7 @@ const PoslodavciPomocVama = () => {
               </div>
             </div>
           </div>
-          {/* CHART ***************************************/} 
+          {/* CHART ***************************************/}
           <div className={styles.pomoc__left_chart}>
             <Image
               src={"/zaposliseChart.png"}
