@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 const useScreenSize = () => {
-  const [screenSize, setScreenSize] = useState(null);
+  const [screenSize, setScreenSize] = useState(0);
 
   useEffect(() => {
     const handleResize = () => {
