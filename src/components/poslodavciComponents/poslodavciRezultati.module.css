@@ -74,6 +74,8 @@
     padding-inline-start: 1.5rem;
     margin-inline: 0px;
     justify-content: flex-start;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
     scroll-padding-inline-start: 1.5rem;
     scrollbar-width: none;
   }
@@ -106,6 +108,8 @@
     gap: 14px;
     width: 100%;
     overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
     scroll-padding-inline-start: 1.5rem;
     scrollbar-width: none;
   }
