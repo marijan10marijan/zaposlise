@@ -24,7 +24,7 @@
 /* CARD  ****************************************************************/
 .pomoc__left_card {
   position: absolute;
-  left: 333px;
+  left: 227px;
   bottom: 554px;
   background-color: white;
   z-index: 3;
@@ -35,6 +35,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  width: max-content;
 }
 .pomoc__left_card div {
   display: flex;
@@ -63,7 +64,7 @@
   box-shadow: 0px 2px 40px 0px rgba(178, 178, 178, 0.25);
   position: absolute;
   bottom: 240px;
-  left: 139px;
+  left: 36px;
   transform: rotate(-4.5deg);
   border-radius: 14px;
 }
@@ -149,19 +150,19 @@
 .pomoc__left_chart {
   position: absolute;
   z-index: 1;
-  left: 325px;
+  left: 219px;
   bottom: 95px;
 }
 .pomoc__left_decorationTop {
   position: absolute;
   z-index: 1;
   bottom: 634px;
-  left: 497px;
+  left: 391px;
 }
 .pomoc__left_decorationBottom {
   position: absolute;
   z-index: 1;
-  left: 99px;
+  left: -7px;
   bottom: 236px;
 }
 
@@ -208,23 +209,18 @@
   }
   .pomoc__left_card {
     left: 234px;
-    bottom: 100px;
   }
   .pomoc__left_zivotopis {
     left: 40px;
-    bottom: 50px;
   }
   .pomoc__left_chart {
     left: 226px;
-    bottom: 30px;
   }
   .pomoc__left_decorationTop {
     left: 376px;
-    bottom: 200px;
   }
   .pomoc__left_decorationBottom {
     left: 22px;
-    bottom: 110px;
   }
 }
 @media (max-width: 1191px) {
@@ -245,29 +241,72 @@
     margin-block-end: 5rem;
   }
   .pomoc__container {
-    padding-block: 100px;
+    padding-block-start: 60px;
+    padding-block-end: 0px;
     width: 100%;
     margin-inline: 1rem;
     flex-direction: column;
     height: 1000px;
   }
-  .pomoc__left {
-    height: 50%;
+  .pomoc__left_card {
+    bottom: 445px;
+    left: 19px;
   }
   .pomoc__left_zivotopis {
-    width: 500px;
+    width: 400px;
+    bottom: 135px;
+    left: -200px;
   }
-  .pomoc__left_zivotopisBox1 p {
-    width: 100%;
+  .pomoc__left_chart {
+    bottom: 0px;
+    left: 6px;
+  }
+  .pomoc__left_decorationTop {
+    bottom: 540px;
+    left: 95px;
+  }
+  .pomoc__left_decorationBottom {
+    left: -240px;
+    bottom: 120px;
+  }
+
+  .pomoc__left {
+    order: 2;
   }
   .pomoc__right {
+    width: 500px;
+    order: 1;
     flex: 1;
     margin-block: 0;
   }
+  .pomoc__right_content h2 {
+    font-size: 3rem;
+    line-height: 3.56rem;
+  }
+  .pomoc__right_content p {
+    font-size: 1.125rem;
+    line-height: 1.56rem;
+  }
 }
 @media (max-width: 768px) {
+  .pomoc__right {
+    width: 80%;
+  }
+  .pomoc__right_content h2 {
+    font-size: 2.1rem;
+    line-height: 2.75rem;
+  }
+  .pomoc__right_content p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  /* LEFT SIDE CHANGES *******************************************************/
 }
 @media (max-width: 498px) {
+  .pomoc__container {
+    height: 820px;
+  }
 }
 @media (max-width: 246px) {
 }
