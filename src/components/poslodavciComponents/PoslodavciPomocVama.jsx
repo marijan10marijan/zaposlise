@@ -11,7 +11,7 @@ const PoslodavciPomocVama = () => {
           {/* CARD ZA ŽIVOTOPIS ***********************************/}
           <div className={styles.pomoc__left_card}>
             <Image
-              src={"/experience.png"}
+              src={"/success.png"}
               alt="ikona za životopis"
               width={44}
               height={44}

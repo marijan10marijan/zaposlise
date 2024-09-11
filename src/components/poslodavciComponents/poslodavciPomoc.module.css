@@ -2,10 +2,10 @@
   width: 100%;
   margin-block-end: 10rem;
   margin-block-start: 5rem;
+  padding-inline: 1rem;
 }
 .pomoc__container {
   max-width: 1380px;
-  width: 97%;
   margin-inline: auto;
   border-radius: 30px;
   background-color: #f7f7f8;
@@ -243,8 +243,7 @@
   .pomoc__container {
     padding-block-start: 60px;
     padding-block-end: 0px;
-    width: 100%;
-    margin-inline: 1rem;
+    padding-inline: 1.5rem;
     flex-direction: column;
     height: 1000px;
   }
@@ -252,6 +251,7 @@
     bottom: 445px;
     left: 19px;
   }
+
   .pomoc__left_zivotopis {
     width: 400px;
     bottom: 135px;
@@ -263,7 +263,7 @@
   }
   .pomoc__left_decorationTop {
     bottom: 540px;
-    left: 95px;
+    left: 135px;
   }
   .pomoc__left_decorationBottom {
     left: -240px;
@@ -289,24 +289,161 @@
   }
 }
 @media (max-width: 768px) {
+  .pomoc__container {
+    height: 760px;
+  }
   .pomoc__right {
     width: 80%;
   }
+
   .pomoc__right_content h2 {
-    font-size: 2.1rem;
-    line-height: 2.75rem;
+    font-size: 1.75rem;
+    line-height: 2.45rem;
   }
   .pomoc__right_content p {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.225rem;
+  }
+  .pomoc__left_card {
+    padding: 11px;
+    bottom: 300px;
+    left: -40px;
+  }
+  .pomoc__left_card img {
+    width: 25px;
+    height: 25px;
+  }
+  .pomoc__left_card div {
+    gap: 5px;
+  }
+  .pomoc__left_card div h6 {
+    font-size: 8.1px;
+    line-height: 12.16px;
+  }
+  .pomoc__left_card div p {
+    font-size: 7.53px;
+    line-height: 11.29px;
   }
 
-  /* LEFT SIDE CHANGES *******************************************************/
+  .pomoc__left_zivotopis {
+    width: 200px;
+    bottom: 115px;
+    left: -160px;
+    padding: 12px;
+  }
+  .pomoc__left_zivotopisBox1 h6 {
+    font-size: 11.58px;
+    line-height: 17.37px;
+  }
+  .pomoc__left_zivotopisBox1 p {
+    font-size: 8.1px;
+    line-height: 12.16px;
+    width: 100%;
+  }
+  .pomoc__left_zivotopisBox2 p {
+    font-size: 8.1px;
+    line-height: 12.16px;
+  }
+
+  .pomoc__left_zivotopisBox2 div {
+    gap: 4px;
+  }
+  .pomoc__left_zivotopisBox2 div p {
+    font-size: 7.53px;
+    line-height: 11.29px;
+  }
+  .pomoc__left_zivotopisBox2 svg {
+    width: 10px;
+    height: 10px;
+  }
+  .pomoc__left_zivotopisBox3 {
+    gap: 5px;
+  }
+  .pomoc__left_zivotopisBox3 button {
+    height: 29px;
+    font-size: 9.26px;
+    line-height: 13.89px;
+  }
+  .pomoc__left_zivotopisBox3 p {
+    font-size: 8.1px;
+    line-height: 12.16px;
+  }
+
+  .pomoc__left_chart {
+    bottom: 30px;
+    left: -50px;
+  }
+
+  .pomoc__left_chart img {
+    width: 162px;
+    height: 131px;
+  }
+
+  .pomoc__left_decorationTop {
+    bottom: 350px;
+    left: 50px;
+  }
+  .pomoc__left_decorationTop svg {
+    width: 61px;
+    height: 19px;
+  }
+  .pomoc__left_decorationBottom {
+    bottom: 120px;
+    left: -180px;
+  }
+  .pomoc__left_decorationBottom svg {
+    width: 61px;
+    height: 19px;
+  }
 }
-@media (max-width: 498px) {
+@media (max-width: 564px) {
   .pomoc__container {
     height: 820px;
   }
+  .pomoc__right {
+    width: 100%;
+  }
 }
-@media (max-width: 246px) {
+@media (max-width: 471px) {
+  .pomoc__left_card {
+    left: -10px;
+  }
+
+  .pomoc__left_zivotopis {
+    left: -130px;
+  }
+
+  .pomoc__left_chart {
+    left: -20px;
+  }
+
+  .pomoc__left_decorationTop {
+    left: 80px;
+  }
+
+  .pomoc__left_decorationBottom {
+    left: -150px;
+  }
+
+  .pomoc__right {
+    gap: 2rem;
+  }
+  .pomoc__right_content {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 371px) {
+  .pomoc__container {
+    height: 920px;
+  }
+}
+@media (max-width: 317px) {
+  .pomoc__container {
+    height: auto;
+    padding-block-end: 1.5rem;
+  }
+  .pomoc__left {
+    display: none;
+  }
 }
