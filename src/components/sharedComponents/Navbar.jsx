@@ -14,12 +14,14 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <nav className={styles.nav__wrapper}>
         <div className={styles.nav__icon}>
-          <Image
-            src={"/logo.png"}
-            alt="zaposlise logo slika"
-            width={194}
-            height={30}
-          />
+          <Link href={'/'}>
+            <Image
+              src={"/logo.png"}
+              alt="zaposlise logo slika"
+              width={194}
+              height={30}
+            />
+          </Link>
         </div>
         <ul className={styles.nav__links}>
           <li>

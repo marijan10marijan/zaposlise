@@ -11,12 +11,14 @@ const Footer = () => {
         <div className={styles.footer__info}>
           {/* FOOTER SOCIAL ***************************************************/}
           <div className={styles.footer__info_social}>
-            <Image
-              src={"/logo.png"}
-              alt="zaposlise logo image"
-              width={194}
-              height={30}
-            />
+            <Link href={"/"}>
+              <Image
+                src={"/logo.png"}
+                alt="zaposlise logo image"
+                width={194}
+                height={30}
+              />
+            </Link>
             <div className={styles.footer__info_socialLinks}>
               <a
                 href="https://www.facebook.com/zaposlisehrvatska/"
