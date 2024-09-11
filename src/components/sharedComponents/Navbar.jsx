@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <nav className={styles.nav__wrapper}>
         <div className={styles.nav__icon}>
-          <Link href={'/'}>
+          <Link href={"/"}>
             <Image
               src={"/logo.png"}
               alt="zaposlise logo slika"
@@ -27,7 +27,7 @@ const Navbar = () => {
           <li>
             <Link
               href={"/"}
-              className={isActive("") ? styles.nav__links_active : ""}
+              className={isActive("/") ? styles.nav__links_active : ""}
             >
               Naslovna
             </Link>
