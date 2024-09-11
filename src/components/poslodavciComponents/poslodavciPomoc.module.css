@@ -131,6 +131,9 @@
   border-radius: 12px;
   cursor: pointer;
   transition: all 200ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .pomoc__left_zivotopisBox3_button:hover,
 .pomoc__left_zivotopisBox3_button:active {
