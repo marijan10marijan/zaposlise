@@ -129,7 +129,12 @@ const PoslodavciPomocVama = () => {
                 </div>
               </div>
               <div className={styles.pomoc__left_zivotopisBox3}>
-                <button>Kreni na pitanja</button>
+                <Link
+                  href={"/"}
+                  className={styles.pomoc__left_zivotopisBox3_button}
+                >
+                  Kreni na pitanja
+                </Link>
                 <p>
                   Prosječno trajanje kviza: <span>do 2 minute</span>
                 </p>

@@ -119,7 +119,7 @@
   flex-direction: column;
   gap: 0.5rem;
 }
-.pomoc__left_zivotopisBox3 button {
+.pomoc__left_zivotopisBox3_button {
   background-color: rgba(25, 187, 112, 1);
   color: white;
   border: transparent;
@@ -132,8 +132,8 @@
   cursor: pointer;
   transition: all 200ms ease;
 }
-.pomoc__left_zivotopisBox3 button:hover,
-.pomoc__left_zivotopisBox3 button:active {
+.pomoc__left_zivotopisBox3_button:hover,
+.pomoc__left_zivotopisBox3_button:active {
   background-color: black;
 }
 
@@ -359,7 +359,7 @@
   .pomoc__left_zivotopisBox3 {
     gap: 5px;
   }
-  .pomoc__left_zivotopisBox3 button {
+  .pomoc__left_zivotopisBox3_button {
     height: 29px;
     font-size: 9.26px;
     line-height: 13.89px;
