@@ -1,10 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./posloprimciSlider.module.css";
 import SliderItem from "./SliderItem";
-import useScreenSize from "@/utils/useScreenSize";
 
-const sliderData = [ 
+const sliderData = [
   {
     number: 1,
     title: "Netrebaš životopis",
@@ -40,8 +39,8 @@ const sliderData = [
 ];
 
 const PosloprimciSlider = () => {
-  const screenSize = useScreenSize();
   const [activeItem, setActiveItem] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(0);
 
   const handleActiveItem = () => {
     const sliderLength = sliderData.length;
@@ -52,9 +51,13 @@ const PosloprimciSlider = () => {
     }
   };
 
+  useEffect(() => {
+    setScreenWidth(window.innerWidth);
+  }, [screenWidth]);
+
   return (
     <section className={styles.slider}>
-      {screenSize.width >= 1040 ? (
+      {screenWidth >= 1040 ? (
         <div className={styles.slider__wrapper} onClick={handleActiveItem}>
           {sliderData.map((item, index) => (
             <React.Fragment key={item.number}>
