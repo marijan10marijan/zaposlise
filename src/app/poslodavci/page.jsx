@@ -11,7 +11,7 @@ import Kontakt from "@/components/sharedComponents/Kontakt";
 const PoslodavciPage = () => {
   return (
     <div className={styles.poslodavci}>
-      {/* <PoslodavciMain /> */}
+      <PoslodavciMain />
       <PoslodavciPomocVama />
       <KakoRadimo />
       <PoslodavciNasiKorisnici />

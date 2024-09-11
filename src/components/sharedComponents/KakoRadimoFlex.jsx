@@ -268,7 +268,7 @@ const smallCards = [
       </svg>
     ),
     title: "Kompletna usluga",
-    text: "Potpuna usluga spremnu za vas uz podršku 24/7",
+    text: "Potpuna usluga spremna za vas uz podršku 24/7",
   },
 ];
 
@@ -334,7 +334,7 @@ const KakoRadimoFlex = () => {
                 height={588}
                 alt="pozadinska slika na kartici"
               />
-            </div> 
+            </div>
             <div className={styles.bigCardTwo__content}>
               <Image
                 src={"/check.png"}

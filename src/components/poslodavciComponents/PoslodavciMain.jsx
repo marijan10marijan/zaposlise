@@ -23,7 +23,12 @@ const PoslodavciMain = () => {
         {/* MAIN BOTTOM CONTENT **********************************************************************/}
         <div className={styles.main__bottom}>
           <div>
-            <Image src={"/icon1.png"} alt="ikona uspješne značke" width={60} height={60} />
+            <Image
+              src={"/icon1.png"}
+              alt="ikona uspješne značke"
+              width={60}
+              height={60}
+            />
             <p>46+ prosječno prijava po oglasu</p>
           </div>
           <div>
@@ -31,12 +36,18 @@ const PoslodavciMain = () => {
             <p>700+ zadovoljnih korisnika</p>
           </div>
           <div>
-            <Image src={"/time.png"} alt="ikona vremena" width={60} height={60} />
+            <Image
+              src={"/time.png"}
+              alt="ikona vremena"
+              width={60}
+              height={60}
+            />
             <p>{"<"}48h do prvog kandidata</p>
           </div>
         </div>
         {/* MAIN IMAGE **********************************************************************/}
         <div className={styles.main__image_absolute}></div>
+        <div className={styles.main__image_absoluteTwo}></div>
       </div>
     </div>
   );
