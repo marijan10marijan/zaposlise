@@ -229,7 +229,7 @@
   }
   .main__image_absoluteTwo {
     position: absolute;
-    bottom: 0px;
+    bottom: -20px;
     left: 0;
     right: 0;
     background: url("../../../public/imageTwo.png");
@@ -246,11 +246,10 @@
     text-align: start;
   }
   .main__wrapper {
-    padding-block-end: 350px;
+    padding-block-end: 380px;
   }
   .main__image_absoluteTwo {
     height: 480px;
-    bottom: -30px;
     background-size: contain;
   }
   .main__upper {
