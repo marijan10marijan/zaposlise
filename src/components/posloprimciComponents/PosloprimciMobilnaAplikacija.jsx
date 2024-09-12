@@ -49,7 +49,7 @@ const PosloprimciMobilnaAplikacija = () => {
             width={480}
             height={548}
           />
-        </div>
+        </div> 
       </div>
     </section>
   );

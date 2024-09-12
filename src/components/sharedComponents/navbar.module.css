@@ -70,7 +70,7 @@
   border: 1px solid black;
   color: white;
 }
-.nav__buttons_objava:hover,
+.nav__buttons_objava:hover, 
 .nav__buttons_objava:active {
   background-color: black;
   border: 1px solid black;
@@ -129,8 +129,6 @@
     width: 12px;
     height: 12px;
   }
-}
-@media (max-width: 498px) {
 }
 @media (max-width: 306px) {
   .nav__icon img {

@@ -195,6 +195,7 @@
 @media (max-width: 605px) {
   .main {
     padding-block-end: 0;
+    position: relative;
   }
   .main__wrapper {
     gap: 2rem;
@@ -228,7 +229,7 @@
   }
   .main__image_absoluteTwo {
     position: absolute;
-    bottom: -100px;
+    bottom: 0px;
     left: 0;
     right: 0;
     background: url("../../../public/imageTwo.png");
@@ -245,11 +246,11 @@
     text-align: start;
   }
   .main__wrapper {
-    padding-block-end: 360px;
+    padding-block-end: 350px;
   }
   .main__image_absoluteTwo {
-    height: 490px;
-    bottom: 20px;
+    height: 480px;
+    bottom: -20px;
     background-size: contain;
   }
   .main__upper {
@@ -280,7 +281,7 @@
   }
   .main__image_absoluteTwo {
     height: 390px;
-    bottom: 40px;
+    bottom: 0px;
   }
 }
 @media (max-width: 312px) {

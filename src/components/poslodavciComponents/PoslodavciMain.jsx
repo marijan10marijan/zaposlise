@@ -49,7 +49,7 @@ const PoslodavciMain = () => {
         <div className={styles.main__image_absolute}></div>
       </div>
       <div className={styles.main__image_absoluteTwo}></div>
-    </div>
+    </div> 
   );
 };
 

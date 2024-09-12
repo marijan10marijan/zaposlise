@@ -16,7 +16,7 @@
   flex-direction: column;
   gap: 2.5rem;
 }
-.app__left_top {
+.app__left_top { 
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
