@@ -38,7 +38,10 @@ const PosloprimciPosao = () => {
             </p>
           </div>
 
-          <Link className={styles.posao__content_btn} href={"/"}>
+          <Link
+            className={styles.posao__content_btn}
+            href={"/signin/create/user"}
+          >
             Registriraj se
           </Link>
         </div>
