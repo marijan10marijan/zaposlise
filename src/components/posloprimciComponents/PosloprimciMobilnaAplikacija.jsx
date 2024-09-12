@@ -21,7 +21,10 @@ const PosloprimciMobilnaAplikacija = () => {
           <div className={styles.app__left_bottom}>
             <p>Dostupno na:</p>
             <div className={styles.app__left_bottomLinks}>
-              <Link href={"/"}>
+              <a
+                href={"https://apps.apple.com/hr/app/zaposlise-hr/id6443617736"}
+                target="_blank"
+              >
                 <Image
                   className={styles.app__left_bottomLinks_appleImg}
                   src={"/appStore.png"}
@@ -29,8 +32,13 @@ const PosloprimciMobilnaAplikacija = () => {
                   width={190}
                   height={61}
                 />
-              </Link>
-              <Link href={"/"}>
+              </a>
+              <a
+                href={
+                  "https://play.google.com/store/apps/details?id=com.zaposlise.hr&pcampaignid=web_share&pli=1"
+                }
+                target="_blank"
+              >
                 <Image
                   className={styles.app__left_bottomLinks_googleImg}
                   src={"/googlePlay.png"}
@@ -38,7 +46,7 @@ const PosloprimciMobilnaAplikacija = () => {
                   width={208}
                   height={61}
                 />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -49,7 +57,7 @@ const PosloprimciMobilnaAplikacija = () => {
             width={480}
             height={548}
           />
-        </div> 
+        </div>
       </div>
     </section>
   );
