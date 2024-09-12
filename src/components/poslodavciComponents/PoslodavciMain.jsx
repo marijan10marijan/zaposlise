@@ -47,8 +47,8 @@ const PoslodavciMain = () => {
         </div>
         {/* MAIN IMAGE **********************************************************************/}
         <div className={styles.main__image_absolute}></div>
-        <div className={styles.main__image_absoluteTwo}></div>
       </div>
+      <div className={styles.main__image_absoluteTwo}></div>
     </div>
   );
 };

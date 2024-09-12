@@ -198,7 +198,7 @@
   }
   .main__wrapper {
     gap: 2rem;
-    padding-block-end: 664px;
+    padding-block-end: 500px;
     align-items: center;
     text-align: center;
   }
@@ -227,8 +227,15 @@
     display: none;
   }
   .main__image_absoluteTwo {
-    /* CODE ZA BACKGROUND SLIKU NA MOBILNIM UREDAJIMA */
-    
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    right: 0;
+    background: url("../../../public/imageTwo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 650px;
   }
 }
 
@@ -236,6 +243,14 @@
   .main__wrapper {
     align-items: flex-start;
     text-align: start;
+  }
+  .main__wrapper {
+    padding-block-end: 360px;
+  }
+  .main__image_absoluteTwo {
+    height: 490px;
+    bottom: 20px;
+    background-size: contain;
   }
   .main__upper {
     width: 100%;
@@ -259,5 +274,17 @@
     text-align: start;
   }
 }
-@media (max-width: 246px) {
+@media (max-width: 355px) {
+  .main__wrapper {
+    padding-block-end: 310px;
+  }
+  .main__image_absoluteTwo {
+    height: 390px;
+    bottom: 40px;
+  }
+}
+@media (max-width: 312px) {
+  .main__image_absoluteTwo {
+    bottom: -30px;
+  }
 }
