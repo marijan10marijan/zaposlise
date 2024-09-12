@@ -82,7 +82,7 @@ const Navbar = () => {
         <div className={styles.nav__menu}>
           <Link href={"/"}>Sign in</Link>
           <Image
-            src={"/menu.png"}
+            src={"/menu.png"} 
             alt="hamburger menu ikona"
             width={15}
             height={15}

@@ -198,7 +198,7 @@ const PoslodavciPomocVama = () => {
               ono što žele, kada to žele.{" "}
             </p>
           </div>
-          <Link href={"/"} className={styles.pomoc__right_link}>
+          <Link href={"/kontakt"} className={styles.pomoc__right_link}>
             Kontaktiraj nas
             <svg
               width="14"

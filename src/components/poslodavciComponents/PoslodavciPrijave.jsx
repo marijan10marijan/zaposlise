@@ -19,7 +19,7 @@ const PoslodavciPrijave = () => {
             kvalitetne ljude za svoje otvoreno radno mjesto u idućih nekoliko
             dana. 
           </p>
-          <Link href={"/"} className={styles.prijave__left_link}>
+          <Link href={"/kontakt"} className={styles.prijave__left_link}>
             Kontaktirajte nas
           </Link>
         </div>

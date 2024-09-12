@@ -16,7 +16,7 @@ const KakoRadimo = () => {
               najnovije tehnologije, medije i usluge za stvaranje ugodnog
               iskustva zapošljavanja za stručnjake ljudskih resursa i kandidate.{" "}
             </p>
-            <Link href={"/"} className={styles.rad__header_link}>
+            <Link href={"/kontakt"} className={styles.rad__header_link}>
               Kontaktirajte nas
             </Link>
           </div>

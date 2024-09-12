@@ -35,7 +35,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 4px solid white;
+  transition: all 350ms linear;
 }
+
+.nav__links li a:hover {
+  color: rgba(25, 187, 112, 1);
+  border-top: 4px solid rgba(25, 187, 112, 1);
+}
+
 .nav__links .nav__links_active {
   color: rgba(25, 187, 112, 1);
   border-top: 4px solid rgba(25, 187, 112, 1);
@@ -70,7 +78,7 @@
   border: 1px solid black;
   color: white;
 }
-.nav__buttons_objava:hover, 
+.nav__buttons_objava:hover,
 .nav__buttons_objava:active {
   background-color: black;
   border: 1px solid black;

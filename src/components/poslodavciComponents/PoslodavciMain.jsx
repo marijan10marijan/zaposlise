@@ -16,7 +16,7 @@ const PoslodavciMain = () => {
             Nađite idealnog kandidata u manje od 72h. Zapošljavajte brzo i
             efikasno uz smanjene troškove.
           </p>
-          <Link href={"/"} className={styles.main__upper_btn}>
+          <Link href={"/kontakt"} className={styles.main__upper_btn}>
             Kontaktiraj nas
           </Link>
         </div>
@@ -49,7 +49,7 @@ const PoslodavciMain = () => {
         <div className={styles.main__image_absolute}></div>
       </div>
       <div className={styles.main__image_absoluteTwo}></div>
-    </div> 
+    </div>
   );
 };
 
