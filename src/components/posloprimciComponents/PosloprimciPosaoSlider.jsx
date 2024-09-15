@@ -81,7 +81,7 @@ const PosloprimciPosaoSlider = () => {
             </button>
           </div>
         ))}
-        {data.map((item, index) => (
+        {/* {data.map((item, index) => (
           <div
             className={styles.posao__card}
             key={index}
@@ -92,7 +92,7 @@ const PosloprimciPosaoSlider = () => {
               {item.jobPosition}
             </button>
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   );
