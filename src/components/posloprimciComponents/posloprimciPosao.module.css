@@ -95,7 +95,7 @@
   width: fit-content;
   padding-inline-start: 25px;
   animation: autoRun linear infinite;
-  animation-duration: calc(var(--quanity) * 3s);
+  animation-duration: calc(var(--quanity) * 6s);
 }
 
 @keyframes autoRun {
@@ -103,7 +103,7 @@
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(-52%, 0, 0);
+    transform: translate3d(calc(-50% - 270px), 0, 0);
   }
 }
 
