@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./posloprimciPosao.module.css";
-import Image from "next/image";
 
 const data = [
   {
@@ -61,7 +60,6 @@ const PosloprimciPosaoSlider = () => {
             key={index}
             style={{ backgroundImage: `url(${item.image})` }}
           >
-            {/* <Image src={item.image} alt="pozadinska slika" fill sizes="100%" /> */}
             <p className={styles.posao__card_name}>{item.name}</p>
             <button className={styles.posao__card_job}>
               {item.jobPosition}
@@ -72,9 +70,8 @@ const PosloprimciPosaoSlider = () => {
           <div
             className={styles.posao__card}
             key={index}
-            style={{ backgroundImage: `${item.image}` }}
+            style={{ backgroundImage: `url(${item.image})` }}
           >
-            {/* <Image src={item.image} alt="pozadinska slika" fill sizes="100%" /> */}
             <p className={styles.posao__card_name}>{item.name}</p>
             <button className={styles.posao__card_job}>
               {item.jobPosition}
