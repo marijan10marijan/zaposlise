@@ -84,7 +84,7 @@
   height: var(--height);
   overflow: hidden;
   position: relative;
-  transform: translateZ(0);
+  will-change: transform;
 }
 
 .posao__sliderList {
@@ -92,8 +92,8 @@
   grid-auto-columns: min-content;
   grid-auto-flow: column;
   gap: 2rem;
-  transform: translateZ(0);
   width: fit-content;
+  will-change: transform;
   animation: autoRun linear infinite;
   animation-duration: calc(var(--quanity) * 6s);
   overflow: hidden;
@@ -104,7 +104,8 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(calc(-100% - 16px));
+    /* transform: translateX(calc(-50% - 16px)); */
+    transform: translateX(calc(-1 * var(--quanity) * (var(--width) + 32px)));
   }
 }
 
@@ -120,6 +121,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
   z-index: 2;
+  will-change: transform;
 }
 
 .posao__card_name {

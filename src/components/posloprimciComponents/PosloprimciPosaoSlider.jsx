@@ -40,7 +40,7 @@ const PosloprimciPosaoSlider = () => {
       className={styles.posao__slider}
       style={{
         "--height": "340px",
-        "--quanity": data.length,
+        "--quanity": data.length ,
       }}
     >
       <div className={styles.posao__sliderList} style={{ "--width": "270px" }}>
