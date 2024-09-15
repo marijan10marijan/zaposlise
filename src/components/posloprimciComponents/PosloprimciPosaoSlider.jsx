@@ -42,6 +42,21 @@ const data = [
     name: "Marica Petrović",
     jobPosition: "developer",
   },
+  {
+    image: "/cardBackground2.png",
+    name: "Marica Petrović",
+    jobPosition: "kuhar",
+  },
+  {
+    image: "/cardBackground2.png",
+    name: "Marica Petrović",
+    jobPosition: "kuhar",
+  },
+  {
+    image: "/cardBackground2.png",
+    name: "Marica Petrović",
+    jobPosition: "kuhar",
+  },
 ];
 
 const PosloprimciPosaoSlider = () => {
