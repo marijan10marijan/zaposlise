@@ -56,9 +56,12 @@ const PosloprimciPosaoSlider = () => {
     >
       <div className={styles.posao__sliderList} style={{ "--width": "270px" }}>
         {data.map((item, index) => (
-          <div className={styles.posao__card} key={index}>
-            <div></div>
-            <Image src={item.image} alt="pozadinska slika" fill sizes="100%" />
+          <div
+            className={styles.posao__card}
+            key={index}
+            style={{ backgroundImage: `${item.image}` }}
+          >
+            {/* <Image src={item.image} alt="pozadinska slika" fill sizes="100%" /> */}
             <p className={styles.posao__card_name}>{item.name}</p>
             <button className={styles.posao__card_job}>
               {item.jobPosition}
@@ -66,9 +69,12 @@ const PosloprimciPosaoSlider = () => {
           </div>
         ))}
         {data.map((item, index) => (
-          <div className={styles.posao__card} key={index}>
-            <div></div>
-            <Image src={item.image} alt="pozadinska slika" fill sizes="100%" />
+          <div
+            className={styles.posao__card}
+            key={index}
+            style={{ backgroundImage: `${item.image}` }}
+          >
+            {/* <Image src={item.image} alt="pozadinska slika" fill sizes="100%" /> */}
             <p className={styles.posao__card_name}>{item.name}</p>
             <button className={styles.posao__card_job}>
               {item.jobPosition}
