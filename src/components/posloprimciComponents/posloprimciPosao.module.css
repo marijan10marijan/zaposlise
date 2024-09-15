@@ -84,6 +84,7 @@
   height: var(--height);
   overflow: hidden;
   position: relative;
+  transform: translateZ(0);
 }
 
 .posao__sliderList {
@@ -95,13 +96,14 @@
   width: fit-content;
   animation: autoRun linear infinite;
   animation-duration: calc(var(--quanity) * 6s);
+  overflow: hidden;
 }
 
 @keyframes autoRun {
-  from {
+  0% {
     transform: translate3d(0, 0, 0);
   }
-  to {
+  100% {
     transform: translate3d(calc(-50% - 16px), 0, 0);
   }
 }
