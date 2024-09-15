@@ -88,22 +88,21 @@
 
 .posao__sliderList {
   display: grid;
+  grid-auto-columns: min-content;
   grid-auto-flow: column;
-  grid-auto-columns: 270px;
   gap: 2rem;
-  width: calc(var(--width) * var(--quanity));
+  width: fit-content;
   padding-inline-start: 25px;
-  position: absolute;
   animation: autoRun linear infinite;
   animation-duration: calc(var(--quanity) * 6s);
 }
 
 @keyframes autoRun {
   from {
-    left: 0;
+    transform: translate3d(0, 0, 0);
   }
   to {
-    left: calc((var(--width) + 2rem) * -1 * var(--quanity));
+    transform: translate3d(calc(-50% - 12px), 0, 0);
   }
 }
 
@@ -111,8 +110,30 @@
   height: var(--height);
   width: var(--width);
   position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.posao__card div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  background-blend-mode: multiply;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.posao__card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .posao__card_name {
@@ -123,6 +144,7 @@
   font-weight: 600;
   line-height: 1.5rem;
   color: white;
+  z-index: 3;
 }
 .posao__card_job {
   position: absolute;
@@ -136,6 +158,7 @@
   border-radius: 100px;
   background-color: transparent;
   color: white;
+  z-index: 3;
 }
 
 /* BREAKPOINTS *************************************************************/

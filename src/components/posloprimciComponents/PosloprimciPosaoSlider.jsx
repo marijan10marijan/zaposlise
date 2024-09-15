@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./posloprimciPosao.module.css";
+import Image from "next/image";
 
 const data = [
   {
@@ -49,46 +50,30 @@ const PosloprimciPosaoSlider = () => {
     <div
       className={styles.posao__slider}
       style={{
-        "--width": "270px",
         "--height": "340px",
         "--quanity": data.length,
       }}
     >
-      <div className={styles.posao__sliderList}>
+      <div className={styles.posao__sliderList} style={{ "--width": "270px" }}>
         {data.map((item, index) => (
-          <article
-            className={styles.posao__card}
-            key={index}
-            style={{
-              backgroundImage: `url(${item.image})`,
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              borderRadius: "15px",
-            }}
-          >
+          <div className={styles.posao__card} key={index}>
+            <div></div>
+            <Image src={item.image} alt="pozadinska slika" fill sizes="100%" />
             <p className={styles.posao__card_name}>{item.name}</p>
             <button className={styles.posao__card_job}>
               {item.jobPosition}
             </button>
-          </article>
+          </div>
         ))}
         {data.map((item, index) => (
-          <article
-            className={styles.posao__card}
-            key={index}
-            style={{
-              backgroundImage: `url(${item.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              borderRadius: "15px",
-            }}
-          >
+          <div className={styles.posao__card} key={index}>
+            <div></div>
+            <Image src={item.image} alt="pozadinska slika" fill sizes="100%" />
             <p className={styles.posao__card_name}>{item.name}</p>
             <button className={styles.posao__card_job}>
               {item.jobPosition}
             </button>
-          </article>
+          </div>
         ))}
       </div>
     </div>
