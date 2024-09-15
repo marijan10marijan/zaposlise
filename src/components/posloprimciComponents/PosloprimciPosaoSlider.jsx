@@ -65,16 +65,16 @@ const PosloprimciPosaoSlider = () => {
             </button>
           </div>
         ))}
-        {data.map((item, index) => (
+        {/* {data.map((item, index) => (
           <div className={styles.posao__card} key={index}>
-            {/* <div></div> */}
+           
             <Image src={item.image} alt="pozadinska slika" fill sizes="100%" />
             <p className={styles.posao__card_name}>{item.name}</p>
             <button className={styles.posao__card_job}>
               {item.jobPosition}
             </button>
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   );
