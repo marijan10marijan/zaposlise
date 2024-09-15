@@ -38,24 +38,39 @@ const data = [
     jobPosition: "developer",
   },
   {
+    image: "/cardBackground1.png",
+    name: "Marica Petrović",
+    jobPosition: "kuhar",
+  },
+  {
+    image: "/cardBackground2.png",
+    name: "Marica Petrović",
+    jobPosition: "kuhar",
+  },
+  {
+    image: "/cardBackground3.png",
+    name: "Marica Petrović",
+    jobPosition: "developer",
+  },
+  {
+    image: "/cardBackground4.png",
+    name: "Marica Petrović",
+    jobPosition: "vozač",
+  },
+  {
+    image: "/cardBackground5.png",
+    name: "Marica Petrović",
+    jobPosition: "kuhar",
+  },
+  {
     image: "/cardBackground6.png",
     name: "Marica Petrović",
     jobPosition: "developer",
   },
   {
-    image: "/cardBackground2.png",
+    image: "/cardBackground6.png",
     name: "Marica Petrović",
-    jobPosition: "kuhar",
-  },
-  {
-    image: "/cardBackground2.png",
-    name: "Marica Petrović",
-    jobPosition: "kuhar",
-  },
-  {
-    image: "/cardBackground2.png",
-    name: "Marica Petrović",
-    jobPosition: "kuhar",
+    jobPosition: "developer",
   },
 ];
 
