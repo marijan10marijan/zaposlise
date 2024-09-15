@@ -93,7 +93,6 @@
   gap: 2rem;
   /* min-width: calc(var(--width) * var(--quanity)); */
   width: fit-content;
-  padding-inline-start: 25px;
   animation: autoRun linear infinite;
   animation-duration: calc(var(--quanity) * 6s);
 }
@@ -103,7 +102,7 @@
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(calc(-50% - 327px), 0, 0);
+    transform: translate3d(-50% , 0, 0);
   }
 }
 
