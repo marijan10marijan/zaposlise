@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import styles from "./posloprimciPosao.module.css";
 
 const data = [
@@ -74,7 +75,32 @@ const data = [
   },
 ];
 
+const preloadImages = (imageUrls) => {
+  const promises = imageUrls.map((url) => {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.src = url;
+      img.onload = resolve;
+      img.onerror = reject;
+    });
+  });
+
+  return Promise.all(promises);
+};
+
 const PosloprimciPosaoSlider = () => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  // Extract image URLs from your items list
+  const imageUrls = data.map((item) => item.image);
+
+  // Preload images when component mounts
+  useEffect(() => {
+    preloadImages(imageUrls)
+      .then(() => setImagesLoaded(true))
+      .catch((error) => console.error("Error loading images:", error));
+  }, [imageUrls]);
+
   return (
     <div
       className={styles.posao__slider}

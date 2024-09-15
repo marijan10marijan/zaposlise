@@ -92,7 +92,6 @@
   grid-auto-flow: column;
   gap: 2rem;
   transform: translateZ(0);
-  /* min-width: calc(var(--width) * var(--quanity)); */
   width: fit-content;
   animation: autoRun linear infinite;
   animation-duration: calc(var(--quanity) * 6s);
