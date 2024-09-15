@@ -100,11 +100,11 @@
 }
 
 @keyframes autoRun {
-  0% {
-    transform: translate3d(0, 0, 0);
+  from {
+    transform: translateX(0);
   }
-  100% {
-    transform: translate3d(calc(-50% - 16px), 0, 0);
+  to {
+    transform: translateX(calc(-50% - 16px));
   }
 }
 
