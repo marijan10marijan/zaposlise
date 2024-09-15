@@ -45,9 +45,7 @@ const PosloprimciPosao = () => {
             Registriraj se
           </Link>
         </div>
-        <div className={styles.posao__slider}>
-          <PosloprimciPosaoSlider />
-        </div>
+        <PosloprimciPosaoSlider />
       </div>
     </div>
   );

@@ -46,23 +46,52 @@ const data = [
 
 const PosloprimciPosaoSlider = () => {
   return (
-    <>
-      {data.map((item, index) => (
-        <article
-          className={styles.posao__card}
-          key={index}
-          style={{
-            backgroundImage: `url(${item.image})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            borderRadius: "15px",
-          }}
-        >
-          <p className={styles.posao__card_name}>{item.name}</p>
-          <button className={styles.posao__card_job}>{item.jobPosition}</button>
-        </article>
-      ))}
-    </>
+    <div
+      className={styles.posao__slider}
+      style={{
+        "--width": "270px",
+        "--height": "340px",
+        "--quanity": data.length,
+      }}
+    >
+      <div className={styles.posao__sliderList}>
+        {data.map((item, index) => (
+          <article
+            className={styles.posao__card}
+            key={index}
+            style={{
+              backgroundImage: `url(${item.image})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              borderRadius: "15px",
+            }}
+          >
+            <p className={styles.posao__card_name}>{item.name}</p>
+            <button className={styles.posao__card_job}>
+              {item.jobPosition}
+            </button>
+          </article>
+        ))}
+        {data.map((item, index) => (
+          <article
+            className={styles.posao__card}
+            key={index}
+            style={{
+              backgroundImage: `url(${item.image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              borderRadius: "15px",
+            }}
+          >
+            <p className={styles.posao__card_name}>{item.name}</p>
+            <button className={styles.posao__card_job}>
+              {item.jobPosition}
+            </button>
+          </article>
+        ))}
+      </div>
+    </div>
   );
 };
 

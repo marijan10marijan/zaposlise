@@ -7,7 +7,7 @@ import PosloprimciMobilnaAplikacija from "@/components/posloprimciComponents/Pos
 import PosloprimciSlider from "@/components/posloprimciComponents/PosloprimciSlider";
 import PosloprimciPosao from "@/components/posloprimciComponents/PosloprimciPosao";
 
-const PosloprimciPage = () => {
+const PosloprimciPage = () => { 
   return (
     <div className={styles.div}>
       <PosloprimciPosao />

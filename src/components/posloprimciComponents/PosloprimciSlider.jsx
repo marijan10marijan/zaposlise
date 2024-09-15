@@ -46,7 +46,7 @@ const PosloprimciSlider = () => {
     const sliderLength = sliderData.length;
     if (activeItem >= sliderLength - 1) {
       setActiveItem(0);
-    } else {
+    } else { 
       setActiveItem((prev) => prev + 1);
     }
   };
