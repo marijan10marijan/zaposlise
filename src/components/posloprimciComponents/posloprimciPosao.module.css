@@ -91,10 +91,11 @@
   grid-auto-columns: min-content;
   grid-auto-flow: column;
   gap: 2rem;
-  min-width: calc(var(--width) * var(--quanity));
+  /* min-width: calc(var(--width) * var(--quanity)); */
+  width: fit-content;
   padding-inline-start: 25px;
   animation: autoRun linear infinite;
-  animation-duration: calc(var(--quanity) * 6s);
+  animation-duration: calc(var(--quanity) * 3s);
 }
 
 @keyframes autoRun {
