@@ -19,7 +19,7 @@ const data = [
     jobPosition: "developer",
   },
   {
-    image: "/cardBackground4.png",
+    image: "/cardBackground1.png",
     name: "Marica Petrović",
     jobPosition: "vozač",
   },
