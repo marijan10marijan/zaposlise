@@ -2,9 +2,12 @@ import Image from "next/image";
 import React from "react";
 import styles from "./kontakt.module.css";
 
-const KontaktJaviteNamSe = () => {
+const KontaktJaviteNamSe = ({ isOpen }) => {
   return (
-    <div className={styles.kontakt__wrapper_left}>
+    <div
+      className={styles.kontakt__wrapper_left}
+      style={isOpen ? { borderRadius: "0px" } : {}}
+    >
       <h3 className={styles.kontakt__wrapper_left_title}>Javite nam se</h3>
       <div className={styles.kontakt__wrapper_left_data}>
         <a href="tel:+1012 3456 789" target="_blank">

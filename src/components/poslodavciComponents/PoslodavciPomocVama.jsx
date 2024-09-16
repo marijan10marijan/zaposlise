@@ -12,7 +12,7 @@ const PoslodavciPomocVama = () => {
   const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
-    if (isOpen) {
+    if (isOpen && screenWidth > 564) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
@@ -262,8 +262,8 @@ const PoslodavciPomocVama = () => {
           <div className={styles.modalDiv}>
             {screenWidth >= 1191 || screenWidth <= 564 ? (
               <div className={styles.modalDiv_Kontakt}>
-                <KontaktJaviteNamSe />
-                <div>
+                <KontaktJaviteNamSe isOpen={isOpen} />
+                <div className={styles.modalDiv_KontaktForm}>
                   <h3>Kontaktirajte nas</h3>
                   <KontaktForm />
                 </div>
