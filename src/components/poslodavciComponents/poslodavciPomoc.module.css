@@ -496,17 +496,16 @@
   .modalDivOverlay {
     justify-content: flex-start;
     align-items: flex-start;
-    /* height: 1264px; */
   }
   .modalDiv {
     position: relative;
     border-radius: 0;
     width: 100%;
-    min-height: 100vh;
+    max-height: 100dvh;
     overflow: auto;
     padding-inline: 0px;
     padding-block-start: 0px;
-    padding-block-end: 2rem;
+    padding-block-end: 4rem;
     display: flex;
     align-items: flex-start;
   }
