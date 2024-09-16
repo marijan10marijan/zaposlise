@@ -8,8 +8,8 @@ import KontaktJaviteNamSe from "../sharedComponents/KontaktJaviteNamSe";
 
 const PoslodavciPomocVama = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const isBorder = isOpen && screenWidth <= 564;
   const [screenWidth, setScreenWidth] = useState(0);
+  const isBorder = isOpen && screenWidth <= 564;
 
   useEffect(() => {
     if (isOpen) {
