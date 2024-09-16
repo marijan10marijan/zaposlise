@@ -516,11 +516,12 @@
     gap: 2.5rem;
     width: 100%;
     padding: 0;
-    padding-block-end: calc(4rem + env(safe-area-inset-bottom));
     border-radius: 0px;
   }
   .modalDiv_KontaktForm {
     padding-inline: 1rem;
+    padding-block-end: calc(4rem + env(safe-area-inset-bottom));
+    padding-block-end: 4rem;
   }
   .modalDiv_KontaktForm h3 {
     display: none;
