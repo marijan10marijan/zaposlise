@@ -6,7 +6,6 @@
   max-width: 1200px;
   width: 95%;
   margin-inline: auto;
-  margin-block-end: 10rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,7 +81,6 @@
 @media (max-width: 1040px) {
   .kontakt__wrapper {
     flex-direction: column;
-    margin-block-end: 5rem;
   }
   .kontakt__wrapper_left {
     width: 100%;

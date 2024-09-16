@@ -1,9 +1,38 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import styles from "./poslodavciPomoc.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import Kontakt from "../sharedComponents/Kontakt";
+import KontaktForm from "../sharedComponents/KontaktForm";
+import KontaktJaviteNamSe from "../sharedComponents/KontaktJaviteNamSe";
 
 const PoslodavciPomocVama = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className={styles.pomoc}>
       <div className={styles.pomoc__container}>
@@ -184,7 +213,7 @@ const PoslodavciPomocVama = () => {
             </svg>
           </div>
         </div>
-        {/* PRIGHT SIDE  ****************************************/}
+        {/* RIGHT SIDE  ****************************************/}
         <div className={styles.pomoc__right}>
           <div className={styles.pomoc__right_content}>
             <h2>Kako Zaposlise može pomoći Vama ?</h2>
@@ -198,7 +227,10 @@ const PoslodavciPomocVama = () => {
               ono što žele, kada to žele.{" "}
             </p>
           </div>
-          <Link href={"/kontakt"} className={styles.pomoc__right_link}>
+          <button
+            onClick={() => setIsOpen(true)}
+            className={styles.pomoc__right_link}
+          >
             Kontaktiraj nas
             <svg
               width="14"
@@ -222,9 +254,40 @@ const PoslodavciPomocVama = () => {
                 </clipPath>
               </defs>
             </svg>
-          </Link>
+          </button>
         </div>
       </div>
+      {isOpen && (
+        <div className={styles.modalDivOverlay}>
+          <div className={styles.modalDiv}>
+            {screenWidth >= 1191 || screenWidth <= 564 ? (
+              <div className={styles.modalDiv_Kontakt}>
+                <KontaktJaviteNamSe />
+                <div>
+                  <h3>Kontaktirajte nas</h3>
+                  <KontaktForm />
+                </div>
+              </div>
+            ) : (
+              <div className={styles.modalDiv_KontaktForm}>
+                <h3>Kontaktirajte nas</h3>
+                <KontaktForm />
+              </div>
+            )}
+            <div
+              onClick={() => setIsOpen(false)}
+              className={styles.modalDiv__closeIcon}
+            >
+              <Image
+                src={"/closeIcon.png"}
+                alt="ikona za zatvaranje popup prozora"
+                width={50}
+                height={50}
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

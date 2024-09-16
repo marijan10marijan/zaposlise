@@ -203,10 +203,64 @@
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5rem;
+  background-color: transparent;
+  width: fit-content;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* MODAL DIV ********************************************************************************/
+.modalDivOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.modalDiv {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 100;
+  background-color: white;
+  padding: 30px 114px 30px 30px;
+  border-radius: 30px;
+  width: fit-content;
+  height: 674px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.modalDiv__closeIcon {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.modalDiv_Kontakt {
+  max-width: 1200px;
+  width: 95%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
 }
 
 /* BREAKPOINTS *************************************************************/
 @media (max-width: 1301px) {
+  .modalDiv {
+    padding: 1rem 100px 1rem 1rem;
+  }
   .pomoc__container {
     padding-inline: 1.5rem;
   }
@@ -227,6 +281,20 @@
   }
 }
 @media (max-width: 1191px) {
+  .modalDiv {
+    padding: 60px;
+  }
+  .modalDiv__closeIcon {
+    right: 60px;
+  }
+  .modalDiv_Kontakt {
+    width: 100%;
+    padding-inline: 1rem;
+    gap: 2.5rem;
+  }
+  .modalDiv_KontaktForm {
+    width: 716px;
+  }
   .pomoc__right {
     width: 400px;
   }
@@ -400,6 +468,11 @@
   }
 }
 @media (max-width: 564px) {
+  .modalDivOverlay {
+    width: fit-content;
+    height: fit-content;
+  }
+
   .pomoc__container {
     height: 820px;
   }

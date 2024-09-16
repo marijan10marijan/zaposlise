@@ -104,7 +104,6 @@
     transform: translateX(0);
   }
   to {
-    /* transform: translateX(calc(-50% - 16px)); */
     transform: translateX(calc(-1 * var(--quanity) * (var(--width) + 32px)));
   }
 }
