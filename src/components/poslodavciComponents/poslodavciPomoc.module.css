@@ -501,12 +501,11 @@
     position: relative;
     border-radius: 0;
     width: 100%;
-    min-height: 99vh;
-    margin: 1px;
+    min-height: 100vh;
+    margin: 10px;
     overflow: auto;
     padding-inline: 0px;
     padding-block-start: 0px;
-    padding-block-end: 4rem;
     display: flex;
     align-items: flex-start;
   }
