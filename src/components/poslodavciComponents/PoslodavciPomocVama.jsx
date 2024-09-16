@@ -11,15 +11,55 @@ const PoslodavciPomocVama = () => {
   const [screenWidth, setScreenWidth] = useState(0);
   const isBorder = isOpen && screenWidth <= 564;
 
+  // useEffect(() => {
+  //   if (isOpen) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "";
+  //   }
+
+  //   return () => {
+  //     document.body.style.overflow = "";
+  //   };
+  // }, [isOpen]);
+
   useEffect(() => {
-    if (isOpen) {
+    const lockBodyScroll = () => {
+      // Save the current scroll position
+      const scrollY = window.scrollY;
+
+      // Lock the body and set fixed positioning
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
       document.body.style.overflow = "hidden";
-    } else {
+      document.body.style.width = "100vw"; // Ensure no horizontal scrolling
+    };
+
+    const unlockBodyScroll = () => {
+      // Restore the body's scroll position
+      const scrollY = document.body.style.top;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
       document.body.style.overflow = "";
+      document.body.style.width = "";
+
+      // Restore the scroll position
+      window.scrollTo(0, parseInt(scrollY || "0") * -1);
+    };
+
+    if (isOpen) {
+      lockBodyScroll();
+    } else {
+      unlockBodyScroll();
     }
 
     return () => {
-      document.body.style.overflow = "";
+      // Clean up by restoring body scroll
+      unlockBodyScroll();
     };
   }, [isOpen]);
 
