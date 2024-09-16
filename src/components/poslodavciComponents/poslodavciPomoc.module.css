@@ -506,6 +506,7 @@
     overflow: auto;
     padding-inline: 0px;
     padding-block-start: 0px;
+    padding-block-end: 2rem;
     display: flex;
     align-items: flex-start;
   }
