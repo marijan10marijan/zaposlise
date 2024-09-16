@@ -284,6 +284,17 @@ const PoslodavciPomocVama = () => {
                 height={50}
               />
             </div>
+            <div
+              onClick={() => setIsOpen(false)}
+              className={styles.modalDiv__closeIconSmall}
+            >
+              <Image
+                src={"/closeIconSmall.png"}
+                alt="ikona za zatvaranje popup prozora"
+                width={24}
+                height={24}
+              />
+            </div>
           </div>
         </div>
       )}
