@@ -115,11 +115,7 @@
     line-height: 1.25rem;
   }
 }
-@media (max-width: 564px) {
-  .form__button {
-    margin-block-end: 2rem;
-  }
-}
+
 @media (max-width: 498px) {
   .form__flexInputs {
     flex-direction: column;
