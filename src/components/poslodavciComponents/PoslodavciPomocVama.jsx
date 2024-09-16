@@ -10,8 +10,6 @@ const PoslodavciPomocVama = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [screenWidth, setScreenWidth] = useState(0);
   const isBorder = isOpen && screenWidth <= 564;
-
-  // useEffect(() => {
   //   if (isOpen) {
   //     document.body.style.overflow = "hidden";
   //   } else {
@@ -25,20 +23,19 @@ const PoslodavciPomocVama = () => {
 
   useEffect(() => {
     const lockBodyScroll = () => {
-      // Save the current scroll position
       const scrollY = window.scrollY;
 
-      // Lock the body and set fixed positioning
+
       document.body.style.position = "fixed";
       document.body.style.top = `-${scrollY}px`;
       document.body.style.left = "0";
       document.body.style.right = "0";
       document.body.style.overflow = "hidden";
-      document.body.style.width = "100vw"; // Ensure no horizontal scrolling
+      document.body.style.width = "100vw"; 
     };
 
     const unlockBodyScroll = () => {
-      // Restore the body's scroll position
+
       const scrollY = document.body.style.top;
       document.body.style.position = "";
       document.body.style.top = "";
@@ -47,7 +44,6 @@ const PoslodavciPomocVama = () => {
       document.body.style.overflow = "";
       document.body.style.width = "";
 
-      // Restore the scroll position
       window.scrollTo(0, parseInt(scrollY || "0") * -1);
     };
 
@@ -58,7 +54,6 @@ const PoslodavciPomocVama = () => {
     }
 
     return () => {
-      // Clean up by restoring body scroll
       unlockBodyScroll();
     };
   }, [isOpen]);
