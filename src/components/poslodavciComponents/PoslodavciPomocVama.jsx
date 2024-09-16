@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import styles from "./poslodavciPomoc.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import Kontakt from "../sharedComponents/Kontakt";
 import KontaktForm from "../sharedComponents/KontaktForm";
 import KontaktJaviteNamSe from "../sharedComponents/KontaktJaviteNamSe";
 
@@ -12,7 +11,7 @@ const PoslodavciPomocVama = () => {
   const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
-    if (isOpen && screenWidth > 564) {
+    if (isOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
