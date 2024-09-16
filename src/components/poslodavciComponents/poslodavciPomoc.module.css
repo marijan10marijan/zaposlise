@@ -520,7 +520,7 @@
   .modalDiv_KontaktForm {
     padding-inline: 1rem;
     padding-block-end: 2rem;
-    padding-block-end: calc(32px + env(safe-area-inset-bottom));
+    padding-bottom: calc(32px + env(safe-area-inset-bottom));
   }
   .modalDiv_KontaktForm h3 {
     display: none;
