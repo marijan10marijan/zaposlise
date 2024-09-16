@@ -509,6 +509,7 @@
     padding-block-start: 0px;
     display: flex;
     align-items: flex-start;
+    padding-block-end: calc(4rem + env(safe-area-inset-bottom));
   }
   .modalDiv_Kontakt {
     flex-direction: column;
@@ -520,7 +521,6 @@
   }
   .modalDiv_KontaktForm {
     padding-inline: 1rem;
-    padding-block-end: calc(4rem + env(safe-area-inset-bottom));
   }
   .modalDiv_KontaktForm h3 {
     display: none;
