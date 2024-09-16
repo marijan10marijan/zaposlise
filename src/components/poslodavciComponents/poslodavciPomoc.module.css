@@ -519,7 +519,7 @@
   }
   .modalDiv_KontaktForm {
     padding-inline: 1rem;
-    padding-block-end: calc(2rem + env(safe-area-inset-bottom));
+    padding-block-end: calc(4rem + env(safe-area-inset-bottom));
   }
   .modalDiv_KontaktForm h3 {
     display: none;
