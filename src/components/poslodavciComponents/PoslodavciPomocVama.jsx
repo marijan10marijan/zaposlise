@@ -8,6 +8,7 @@ import KontaktJaviteNamSe from "../sharedComponents/KontaktJaviteNamSe";
 
 const PoslodavciPomocVama = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const isBorder = isOpen && screenWidth <= 564;
   const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
@@ -261,7 +262,7 @@ const PoslodavciPomocVama = () => {
           <div className={styles.modalDiv}>
             {screenWidth >= 1191 || screenWidth <= 564 ? (
               <div className={styles.modalDiv_Kontakt}>
-                <KontaktJaviteNamSe isOpen={isOpen} />
+                <KontaktJaviteNamSe isBorder={isBorder} />
                 <div className={styles.modalDiv_KontaktForm}>
                   <h3>Kontaktirajte nas</h3>
                   <KontaktForm />

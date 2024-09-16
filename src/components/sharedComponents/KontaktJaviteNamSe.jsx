@@ -2,11 +2,11 @@ import Image from "next/image";
 import React from "react";
 import styles from "./kontakt.module.css";
 
-const KontaktJaviteNamSe = ({ isOpen }) => {
+const KontaktJaviteNamSe = ({ isBorder }) => {
   return (
     <div
       className={styles.kontakt__wrapper_left}
-      style={isOpen ? { borderRadius: "0px" } : {}}
+      style={isBorder ? { borderRadius: "0px" } : {}}
     >
       <h3 className={styles.kontakt__wrapper_left_title}>Javite nam se</h3>
       <div className={styles.kontakt__wrapper_left_data}>
