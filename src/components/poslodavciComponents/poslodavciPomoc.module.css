@@ -510,7 +510,7 @@
   }
   .modalDiv_Kontakt {
     flex-direction: column;
-    height: 99dvh;
+    height: 100dvh;
     gap: 2.5rem;
     width: 100%;
     padding: 0;
