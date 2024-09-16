@@ -501,7 +501,7 @@
     position: relative;
     border-radius: 0;
     width: 100%;
-    /* min-height: 100vh; */
+    max-height: 100vh;
     margin: 0.1px;
     overflow: auto;
     padding-inline: 0px;
