@@ -505,16 +505,16 @@
     overflow: auto;
     padding-inline: 0px;
     padding-block-start: 0px;
-    padding-block-end: 4rem;
     display: flex;
     align-items: flex-start;
   }
   .modalDiv_Kontakt {
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     gap: 2.5rem;
     width: 100%;
     padding: 0;
+    padding-block-end: 2rem;
     border-radius: 0px;
   }
   .modalDiv_KontaktForm {
