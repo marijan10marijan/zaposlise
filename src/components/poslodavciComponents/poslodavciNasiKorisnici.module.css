@@ -239,4 +239,10 @@
     justify-content: space-between;
     align-items: center;
   }
+  .korisnici__bottom_testimonials div {
+    padding-inline: 0;
+  }
+  .korisnici__bottom_testimonials div img {
+    width: 120px;
+  }
 }
