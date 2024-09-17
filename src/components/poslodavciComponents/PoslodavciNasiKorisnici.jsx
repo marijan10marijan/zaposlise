@@ -1,9 +1,47 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./poslodavciNasiKorisnici.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+const clients = [
+  {
+    id: 1,
+    name: "Luka Grgurić",
+    company: "Direktor, Samoborček",
+    description:
+      "Duplico made my job search effortless! Their platform connected me with great opportunities. I highly recommend their services to all.",
+    logo: "",
+  },
+  {
+    id: 2,
+    name: "John Doe",
+    company: "Team Lead, Schneider Electric",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nulla natus adipisci quasi, atque minima odio facilis maxime laudantium repellendus dicta maiores, ipsam nihil rem ex quas, distinctio nesciunt quisquam.",
+    logo: "",
+  },
+  {
+    id: 3,
+    name: "Mislav Janjic",
+    company: "Engineer, Ivicom Consulting",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit atque minima odio facilis maxime laudantium repellendus dicta maiores, ipsam nihil rem ex quas, distinctio nesciunt quisquam.",
+    logo: "",
+  },
+  {
+    id: 4,
+    name: "Anne Lustig",
+    company: "Direktor, Ivicom Consulting",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nulla natus adipisci quasi, atque minima odio facilis maxime laudantium repellendus dicta.",
+    logo: "",
+  },
+];
+
 const PoslodavciNasiKorisnici = () => {
+  const [currentClient, setCurrentClient] = useState(0);
+
   return (
     <div className={styles.korisnici}>
       <div className={styles.korisnici__wrapper}>
@@ -40,79 +78,93 @@ const PoslodavciNasiKorisnici = () => {
         <div className={styles.korisnici__main}>
           <div className={styles.korisnici__main_left}>
             <div className={styles.korisnici__main_left_top}>
-              <h4>Luka Grgurić</h4>
-              <p>Direktor, Samoborček</p>
+              <h4>{clients[currentClient].name}</h4>
+              <p>{clients[currentClient].company}</p>
             </div>
             <div className={styles.korisnici__main_left_bottom}>
               <div>
-                <svg
-                  width="42"
-                  height="42"
-                  viewBox="0 0 42 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <button
+                  className={styles.korisnici__main_left_bottomButton}
+                  onClick={() =>
+                    setCurrentClient(
+                      (prev) => (prev - 1 + clients.length) % clients.length
+                    )
+                  }
                 >
-                  <rect
-                    x="-0.5"
-                    y="0.5"
-                    width="41"
-                    height="41"
-                    rx="20.5"
-                    transform="matrix(-1 0 0 1 41 0)"
-                    stroke="white"
-                  />
-                  <path
-                    d="M29.25 21H12.75"
-                    stroke="white"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M19.5 14.25L12.75 21L19.5 27.75"
-                    stroke="white"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                <svg
-                  width="42"
-                  height="42"
-                  viewBox="0 0 42 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                  <svg
+                    width="42"
+                    height="42"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="-0.5"
+                      y="0.5"
+                      width="41"
+                      height="41"
+                      rx="20.5"
+                      transform="matrix(-1 0 0 1 41 0)"
+                      stroke="white"
+                    />
+                    <path
+                      d="M29.25 21H12.75"
+                      stroke="white"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M19.5 14.25L12.75 21L19.5 27.75"
+                      stroke="white"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+                <button
+                  className={styles.korisnici__main_left_bottomButton}
+                  onClick={() =>
+                    setCurrentClient((prev) => (prev + 1) % clients.length)
+                  }
                 >
-                  <rect
-                    x="0.5"
-                    y="0.5"
-                    width="41"
-                    height="41"
-                    rx="20.5"
-                    stroke="white"
-                  />
-                  <path
-                    d="M12.75 21H29.25"
-                    stroke="white"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M22.5 14.25L29.25 21L22.5 27.75"
-                    stroke="white"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                  <svg
+                    width="42"
+                    height="42"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="41"
+                      height="41"
+                      rx="20.5"
+                      stroke="white"
+                    />
+                    <path
+                      d="M12.75 21H29.25"
+                      stroke="white"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M22.5 14.25L29.25 21L22.5 27.75"
+                      stroke="white"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
               </div>
 
-              <p>1/5</p>
+              <p>
+                {currentClient + 1} /{clients.length}
+              </p>
             </div>
           </div>
           <div className={styles.korisnici__main_right}>
-            <p>
-              Duplico made my job search effortless! <br /> Their platform
-              connected me with great opportunities. I highly recommend their
-              services to all.
-            </p>
+            <p>{clients[currentClient].description}</p>
           </div>
         </div>
         {/* BOTTOM **************** ************************/}

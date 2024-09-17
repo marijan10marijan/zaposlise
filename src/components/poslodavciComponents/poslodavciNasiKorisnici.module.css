@@ -71,6 +71,12 @@
   display: flex;
   gap: 1.25rem;
 }
+.korisnici__main_left_bottomButton {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
 
 .korisnici__main_right p {
   width: 636px;
@@ -123,7 +129,7 @@
     padding-block-start: 4rem;
     padding-block-end: 2.5rem;
     border-radius: 0px;
-  } 
+  }
 }
 @media (max-width: 1040px) {
   .korisnici {
