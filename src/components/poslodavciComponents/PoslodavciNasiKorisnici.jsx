@@ -171,7 +171,7 @@ const PoslodavciNasiKorisnici = () => {
         <div className={styles.korisnici__bottom}>
           <div className={styles.korisnici__bottom_testimonials}>
             {clients.map((client, index) => (
-              <div key={client.id}>
+              <div key={client.id} onClick={() => setCurrentClient(index)}>
                 <Image
                   className={index === currentClient ? styles.active : ""}
                   src={client.logo}

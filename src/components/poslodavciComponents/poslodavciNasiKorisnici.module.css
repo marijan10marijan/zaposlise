@@ -99,6 +99,7 @@
 }
 .korisnici__bottom_testimonials div {
   padding: 17px 33px;
+  cursor: pointer;
 }
 .korisnici__bottom_testimonials div img {
   object-fit: contain;
