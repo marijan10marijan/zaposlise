@@ -101,7 +101,7 @@
   padding: 17px 33px;
 }
 .korisnici__bottom_testimonials div img {
-  object-fit: cover;
+  object-fit: contain;
   opacity: 0.5;
 }
 .korisnici__bottom_testimonials div img.active {
@@ -162,6 +162,20 @@
     flex: 2;
   }
   .korisnici__bottom_link {
+    display: none;
+  }
+  .korisnici__bottom_testimonials {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+    scrollbar-width: none;
+  }
+  .korisnici__bottom_testimonials::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  .korisnici__bottom_testimonials::-webkit-scrollbar-thumb {
     display: none;
   }
 }

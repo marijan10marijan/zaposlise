@@ -11,7 +11,7 @@ const clients = [
     company: "Direktor, Samoborček",
     description:
       "Duplico made my job search effortless! Their platform connected me with great opportunities. I highly recommend their services to all.",
-    logo: "",
+    logo: "/samoborcek.png",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const clients = [
     company: "Team Lead, Schneider Electric",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nulla natus adipisci quasi, atque minima odio facilis maxime laudantium repellendus dicta maiores",
-    logo: "",
+    logo: "/schneider.png",
   },
   {
     id: 3,
@@ -27,15 +27,15 @@ const clients = [
     company: "Engineer, Ivicom Consulting",
     description:
       "Lorem atque minima odio facilis maxime laudantium repellendus dicta maiores, ipsam nihil rem ex quas, distinctio nesciunt quisquam.",
-    logo: "",
+    logo: "/ivicom.png",
   },
   {
     id: 4,
     name: "Anne Lustig",
-    company: "Direktor, Ivicom Consulting",
+    company: "Direktor, Weishaupt",
     description:
       "Lorem ipsum dolor sit, adipisicing elit. Tempora nulla natus adipisci quasi, atque minima odio facilis maxime laudantium repellendus dicta.",
-    logo: "",
+    logo: "/weishaupt.png",
   },
 ];
 
@@ -170,24 +170,17 @@ const PoslodavciNasiKorisnici = () => {
         {/* BOTTOM **************** ************************/}
         <div className={styles.korisnici__bottom}>
           <div className={styles.korisnici__bottom_testimonials}>
-            <div>
-              <Image
-                className={styles.active}
-                src={"/samoborcek.png"}
-                alt=""
-                height={32}
-                width={130}
-              />
-            </div>
-            <div>
-              <Image src={"/schneider.png"} alt="" height={32} width={113} />
-            </div>
-            <div>
-              <Image src={"/ivicom.png"} alt="" height={32} width={160} />
-            </div>
-            <div>
-              <Image src={"/weishaupt.png"} alt="" height={32} width={153} />
-            </div>
+            {clients.map((client, index) => (
+              <div key={client.id}>
+                <Image
+                  className={index === currentClient ? styles.active : ""}
+                  src={client.logo}
+                  alt={client.company}
+                  height={32}
+                  width={130}
+                />
+              </div>
+            ))}
           </div>
           <Link href={"/"} className={styles.korisnici__bottom_link}>
             <p>Show more</p>
