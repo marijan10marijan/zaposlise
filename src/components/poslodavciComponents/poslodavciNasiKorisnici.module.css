@@ -201,9 +201,6 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-  .korisnici__bottom_testimonials {
-    justify-content: center;
-  }
 }
 @media (max-width: 498px) {
   .korisnici__wrapper {
@@ -244,7 +241,6 @@
   }
   .korisnici__bottom_testimonials {
     gap: 0.5rem;
-    justify-content: space-between;
   }
   .korisnici__bottom_testimonials div {
     padding-inline: 1rem;
