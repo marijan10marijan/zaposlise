@@ -249,3 +249,15 @@
     width: 120px;
   }
 }
+
+@media (max-width: 365px) {
+  .korisnici__bottom_testimonials {
+    gap: 0.25rem;
+  }
+  .korisnici__bottom_testimonials div {
+    padding-inline: 0;
+  }
+  .korisnici__bottom_testimonials div img {
+    width: 110px;
+  }
+}
