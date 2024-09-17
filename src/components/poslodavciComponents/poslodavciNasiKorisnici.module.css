@@ -241,6 +241,7 @@
   }
   .korisnici__bottom_testimonials {
     justify-content: center;
+    gap: 1rem;
   }
   .korisnici__bottom_testimonials div {
     padding-inline: 0;
