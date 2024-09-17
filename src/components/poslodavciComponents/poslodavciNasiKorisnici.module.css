@@ -240,11 +240,10 @@
     align-items: center;
   }
   .korisnici__bottom_testimonials {
-    justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
   }
   .korisnici__bottom_testimonials div {
-    padding-inline: 0;
+    padding-inline: 1rem;
   }
   .korisnici__bottom_testimonials div img {
     width: 120px;
