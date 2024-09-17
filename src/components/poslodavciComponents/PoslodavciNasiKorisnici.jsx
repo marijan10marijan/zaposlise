@@ -18,7 +18,7 @@ const clients = [
     name: "John Doe",
     company: "Team Lead, Schneider Electric",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nulla natus adipisci quasi, atque minima odio facilis maxime laudantium repellendus dicta maiores, ipsam nihil rem ex quas, distinctio nesciunt quisquam.",
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nulla natus adipisci quasi, atque minima odio facilis maxime laudantium repellendus dicta maiores",
     logo: "",
   },
   {
@@ -26,7 +26,7 @@ const clients = [
     name: "Mislav Janjic",
     company: "Engineer, Ivicom Consulting",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit atque minima odio facilis maxime laudantium repellendus dicta maiores, ipsam nihil rem ex quas, distinctio nesciunt quisquam.",
+      "Lorem atque minima odio facilis maxime laudantium repellendus dicta maiores, ipsam nihil rem ex quas, distinctio nesciunt quisquam.",
     logo: "",
   },
   {
@@ -34,7 +34,7 @@ const clients = [
     name: "Anne Lustig",
     company: "Direktor, Ivicom Consulting",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nulla natus adipisci quasi, atque minima odio facilis maxime laudantium repellendus dicta.",
+      "Lorem ipsum dolor sit, adipisicing elit. Tempora nulla natus adipisci quasi, atque minima odio facilis maxime laudantium repellendus dicta.",
     logo: "",
   },
 ];
