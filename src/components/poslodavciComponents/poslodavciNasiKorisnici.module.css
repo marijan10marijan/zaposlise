@@ -239,6 +239,9 @@
     justify-content: space-between;
     align-items: center;
   }
+  .korisnici__bottom_testimonials {
+    justify-content: center;
+  }
   .korisnici__bottom_testimonials div {
     padding-inline: 0;
   }
