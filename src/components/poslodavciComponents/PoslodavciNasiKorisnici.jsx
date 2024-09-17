@@ -18,7 +18,7 @@ const clients = [
     name: "John Doe",
     company: "Team Lead, Schneider Electric",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nulla natus adipisci quasi, atque minima odio facilis maxime laudantium repellendus dicta maiores",
+      "Lorem ipsum , adipisicing elit. Tempora nulla natus adipisci quasi, atque minima odio facilis maxime laudantium repellendus dicta maiores",
     logo: "/schneider.png",
   },
   {
