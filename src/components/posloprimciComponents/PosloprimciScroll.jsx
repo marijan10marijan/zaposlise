@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import styles from "./posloprimciSlider.module.css";
+import styles from "./posloprimciScroll.module.css";
+import PosloprimciScrollMobile from "./PosloprimciScrollMobile";
 import SliderItem from "./SliderItem";
 
 const sliderData = [
@@ -38,46 +39,59 @@ const sliderData = [
   },
 ];
 
-const PosloprimciSlider = () => {
+const PosloprimciScroll = () => {
   const [activeItem, setActiveItem] = useState(0);
   const [screenWidth, setScreenWidth] = useState(0);
 
-  const handleActiveItem = () => {
-    const sliderLength = sliderData.length;
-    if (activeItem >= sliderLength - 1) {
-      setActiveItem(0);
-    } else { 
-      setActiveItem((prev) => prev + 1);
+  const handleScroll = (e) => {
+    const scrollPosition = window.scrollY;
+
+    if (
+      scrollPosition >= previousSectionHeight &&
+      scrollLocked &&
+      !isAnimating
+    ) {
+      setInSliderSection(true);
+      e.preventDefault();
+
+      if (e.deltaY > 0 && activeItem < sliderData.length - 1) {
+        startAnimation();
+      } else if (e.deltaY < 0 && activeItem > 0) {
+        setActiveItem((prev) => prev - 1);
+      }
     }
   };
 
   useEffect(() => {
-    setScreenWidth(window.innerWidth);
-  }, [screenWidth]);
+    const updateWidth = () => setScreenWidth(window.innerWidth);
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+
+    return () => {
+      window.removeEventListener("resize", updateWidth);
+    };
+  }, [screenWidth, activeItem]);
 
   return (
     <section className={styles.slider}>
       {screenWidth >= 1040 ? (
-        <div className={styles.slider__wrapper} onClick={handleActiveItem}>
+        <div className={styles.slider__wrapper}>
           {sliderData.map((item, index) => (
-            <React.Fragment key={item.number}>
-              {index === activeItem ? <SliderItem item={item} /> : null}
-            </React.Fragment>
+            <div
+              key={item.number}
+              className={`${styles.slider__item} ${
+                index === activeItem ? styles.active : ""
+              }`}
+            >
+              <SliderItem item={item} />
+            </div>
           ))}
         </div>
       ) : (
-        <div
-          className={`${styles.slider__wrapper} ${styles.slider__wrapper_smallScreens}`}
-        >
-          {sliderData.map((item) => (
-            <React.Fragment key={item.number}>
-              <SliderItem item={item} />
-            </React.Fragment>
-          ))}
-        </div>
+        <PosloprimciScrollMobile sliderData={sliderData} />
       )}
     </section>
   );
 };
 
-export default PosloprimciSlider;
+export default PosloprimciScroll;

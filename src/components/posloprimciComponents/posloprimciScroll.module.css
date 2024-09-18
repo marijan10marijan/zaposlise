@@ -5,26 +5,15 @@
   max-width: 1380px;
   width: 95%;
   margin-inline: auto;
-  position: relative;
 }
+
+/* ANIMATION HAPPENS HERE ***********************************************************/
+
 .slider__box {
   border-radius: 30px;
   overflow: hidden;
   display: flex;
   align-items: stretch;
-  cursor: pointer;
-  animation: anima 600ms linear;
-}
-@keyframes anima {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  100% {
-    opacity: 1;
-    visibility: visible;
-  }
 }
 
 .slider__left {
@@ -86,7 +75,7 @@
   }
   .slider__left {
     padding-inline: 1.5rem;
-  } 
+  }
   .slider__left_number {
     top: 30px;
     left: 55px;

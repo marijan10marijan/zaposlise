@@ -4,14 +4,14 @@ import KakoRadimo from "@/components/sharedComponents/KakoRadimo";
 import Kontakt from "@/components/sharedComponents/Kontakt";
 import PosloprimciBlog from "@/components/posloprimciComponents/PosloprimciBlog";
 import PosloprimciMobilnaAplikacija from "@/components/posloprimciComponents/PosloprimciMobilnaAplikacija";
-import PosloprimciSlider from "@/components/posloprimciComponents/PosloprimciSlider";
 import PosloprimciPosao from "@/components/posloprimciComponents/PosloprimciPosao";
+import PosloprimciScroll from "@/components/posloprimciComponents/PosloprimciScroll";
 
-const PosloprimciPage = () => { 
+const PosloprimciPage = () => {
   return (
     <div className={styles.div}>
       <PosloprimciPosao />
-      <PosloprimciSlider />
+      <PosloprimciScroll />
       <KakoRadimo />
       <PosloprimciMobilnaAplikacija />
       <PosloprimciBlog />

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./posloprimciSlider.module.css";
+import styles from "./posloprimciScroll.module.css";
 import Image from "next/image";
 
 const SliderItem = ({ item }) => {
